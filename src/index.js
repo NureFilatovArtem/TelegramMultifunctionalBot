@@ -1,3 +1,6 @@
+// Import dotenv at the top
+require('dotenv').config();
+
 const { Telegraf, Markup } = require('telegraf');
 const OpenAI = require('openai');
 const PDFDocument = require('pdfkit');
@@ -8,7 +11,8 @@ const path = require('path');
 
 console.log('Bot is starting...');
 
-const bot = new Telegraf('8045993727:AAFqdqhRTNkk1zojrjKjVbPpvZ9ySlUWbxM');
+// Use environment variables instead of hardcoded values
+const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 
 // User states and data storage
 const userStates = new Map();
@@ -17,9 +21,9 @@ const userTasks = new Map();
 // Initialize markdown parser
 const md = new MarkdownIt();
 
-// Initialize OpenAI
+// Initialize OpenAI with environment variable
 const openai = new OpenAI({
-    apiKey: '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'
+    apiKey: process.env.OPENAI_API_KEY
 });
 
 // Create notes directory if it doesn't exist
