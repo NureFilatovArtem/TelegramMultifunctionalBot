@@ -1,4 +1,10 @@
 const { Telegraf, Markup } = require('telegraf');
+const OpenAI = require('openai');
+const PDFDocument = require('pdfkit');
+const MarkdownIt = require('markdown-it');
+const moment = require('moment');
+const fs = require('fs');
+const path = require('path');
 
 console.log('Bot is starting...');
 
@@ -7,6 +13,20 @@ const bot = new Telegraf('8045993727:AAFqdqhRTNkk1zojrjKjVbPpvZ9ySlUWbxM');
 // User states and data storage
 const userStates = new Map();
 const userTasks = new Map();
+
+// Initialize markdown parser
+const md = new MarkdownIt();
+
+// Initialize OpenAI
+const openai = new OpenAI({
+    apiKey: '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'
+});
+
+// Create notes directory if it doesn't exist
+const NOTES_DIR = path.join(__dirname, 'notes');
+if (!fs.existsSync(NOTES_DIR)) {
+    fs.mkdirSync(NOTES_DIR);
+}
 
 // Main menu keyboard
 const mainMenuButtons = Markup.inlineKeyboard([
@@ -69,19 +89,96 @@ const translateSubmenu = Markup.inlineKeyboard([
     [Markup.button.callback('« Back to Main Menu', 'back_main')]
 ]);
 
+// Simplified notes submenu
 const notesSubmenu = Markup.inlineKeyboard([
     [Markup.button.callback('📝 New Note', 'note_new')],
-    [Markup.button.callback('📖 View Notes', 'note_view')],
-    [Markup.button.callback('🗑️ Delete Note', 'note_delete')],
+    [Markup.button.callback('📋 View All Notes', 'note_view_all')],
+    [Markup.button.callback('📂 View by Category', 'note_view_categories')],
     [Markup.button.callback('« Back to Main Menu', 'back_main')]
 ]);
 
-const flashcardsSubmenu = Markup.inlineKeyboard([
-    [Markup.button.callback('➕ Create Card', 'flashcard_create')],
-    [Markup.button.callback('📚 Study', 'flashcard_study')],
-    [Markup.button.callback('🔍 View All', 'flashcard_view')],
-    [Markup.button.callback('« Back to Main Menu', 'back_main')]
+// Note categories
+const noteCategories = Markup.inlineKeyboard([
+    [
+        Markup.button.callback('📚 Study', 'category_study'),
+        Markup.button.callback('💼 Work', 'category_work')
+    ],
+    [
+        Markup.button.callback('🏠 Personal', 'category_personal'),
+        Markup.button.callback('💡 Ideas', 'category_ideas')
+    ],
+    [
+        Markup.button.callback('📋 Tasks', 'category_tasks'),
+        Markup.button.callback('🎯 Goals', 'category_goals')
+    ],
+    [Markup.button.callback('❌ Cancel', 'back_main')]
 ]);
+
+// AI improvement options
+const aiImprovementOptions = Markup.inlineKeyboard([
+    [
+        Markup.button.callback('✍️ Improve Writing', 'ai_improve_writing'),
+        Markup.button.callback('🔍 Find Key Points', 'ai_key_points')
+    ],
+    [
+        Markup.button.callback('📝 Summarize', 'ai_summarize'),
+        Markup.button.callback('📊 Structure', 'ai_structure')
+    ],
+    [Markup.button.callback('« Back', 'menu_notes')]
+]);
+
+// Notes storage
+const userNotes = new Map();
+
+// Add debug logging function
+const debug = (message, data = null) => {
+    console.log(`[DEBUG] ${message}`);
+    if (data) {
+        console.log(JSON.stringify(data, null, 2));
+    }
+};
+
+// Error handling middleware
+bot.catch((err, ctx) => {
+    console.error('Bot error:', err);
+    
+    // Handle callback query errors
+    if (err.description && err.description.includes('query is too old')) {
+        // For expired callback queries, try to send a new message
+        ctx.reply('Session expired. Please use the /start command to get a fresh menu.')
+            .catch(e => console.error('Error sending error message:', e));
+        return;
+    }
+
+    // For other errors, try to notify the user
+    ctx.reply('An error occurred. Please try again or use /start to reset the bot.')
+        .catch(e => console.error('Error sending error message:', e));
+});
+
+// Wrap callback handlers in try-catch
+const safeCallback = (handler) => {
+    return async (ctx) => {
+        try {
+            // Try to answer callback query first
+            try {
+                await ctx.answerCbQuery();
+            } catch (e) {
+                console.log('Callback query answer failed:', e.message);
+                // Continue execution even if answering callback failed
+            }
+            
+            // Execute the actual handler
+            await handler(ctx);
+        } catch (err) {
+            console.error('Handler error:', err);
+            try {
+                await ctx.reply('An error occurred. Please try again or use /start to reset.');
+            } catch (e) {
+                console.error('Error sending error message:', e);
+            }
+        }
+    };
+};
 
 // Verify bot connection
 bot.telegram.getMe().then((botInfo) => {
@@ -101,49 +198,43 @@ bot.command('start', (ctx) => {
     );
 });
 
-// Handle menu callbacks
-bot.action('menu_deadlines', async (ctx) => {
-    await ctx.answerCbQuery();
+// Update menu handlers to use safeCallback
+bot.action('menu_deadlines', safeCallback(async (ctx) => {
     userStates.set(ctx.from.id, { state: 'deadlines' });
     await ctx.reply('📝 Task Management:', tasksSubmenu);
-});
+}));
 
-bot.action('menu_translate', async (ctx) => {
-    await ctx.answerCbQuery();
+bot.action('menu_translate', safeCallback(async (ctx) => {
     userStates.set(ctx.from.id, { state: 'translate' });
     await ctx.reply('💬 Translation Menu:', translateSubmenu);
-});
+}));
 
-bot.action('menu_notes', async (ctx) => {
-    await ctx.answerCbQuery();
+bot.action('menu_notes', safeCallback(async (ctx) => {
     userStates.set(ctx.from.id, { state: 'notes' });
-    await ctx.reply('📌 Notes Menu:', notesSubmenu);
-});
+    await ctx.reply('📝 Notes Management:', notesSubmenu);
+}));
 
-bot.action('menu_flashcards', async (ctx) => {
-    await ctx.answerCbQuery();
+bot.action('menu_flashcards', safeCallback(async (ctx) => {
     userStates.set(ctx.from.id, { state: 'flashcards' });
     await ctx.reply('🎯 Flashcards Menu:', flashcardsSubmenu);
-});
+}));
 
 // Handle other menu options
 ['menu_gifs', 'menu_motivation', 'menu_email', 'menu_pdf'].forEach(menu => {
-    bot.action(menu, async (ctx) => {
-        await ctx.answerCbQuery();
+    bot.action(menu, safeCallback(async (ctx) => {
         const featureName = menu.replace('menu_', '').toUpperCase();
         await ctx.reply(
             `${featureName} feature coming soon...`,
             Markup.inlineKeyboard([[Markup.button.callback('« Back to Main Menu', 'back_main')]])
         );
-    });
+    }));
 });
 
 // Handle back to main menu
-bot.action('back_main', async (ctx) => {
-    await ctx.answerCbQuery();
+bot.action('back_main', safeCallback(async (ctx) => {
     userStates.set(ctx.from.id, { state: 'main' });
     await ctx.reply('Main Menu:', mainMenuButtons);
-});
+}));
 
 // Handle task actions
 bot.action('deadline_add', async (ctx) => {
@@ -218,97 +309,205 @@ bot.action(/notify_(.+)/, async (ctx) => {
     userStates.set(userId, { state: 'deadlines' });
 });
 
-// Handle text messages based on user state
+// Handle notes menu
+bot.action('menu_notes', safeCallback(async (ctx) => {
+    userStates.set(ctx.from.id, { state: 'notes' });
+    await ctx.reply('📝 Notes Management:', notesSubmenu);
+}));
+
+// Handle new note
+bot.action('note_new', safeCallback(async (ctx) => {
+    userStates.set(ctx.from.id, { state: 'note_select_category' });
+    await ctx.reply('Select note category:', noteCategories);
+}));
+
+// Handle category selection
+bot.action(/category_(.+)/, safeCallback(async (ctx) => {
+    const userId = ctx.from.id;
+    const category = ctx.match[1];
+    
+    userStates.set(userId, { 
+        state: 'note_create_content',
+        currentNote: {
+            category,
+            id: Date.now().toString(),
+            created: new Date()
+        }
+    });
+
+    await ctx.reply('Enter your note text:');
+}));
+
+// Handle text input for notes
 bot.on('text', async (ctx) => {
     const userId = ctx.from.id;
     const userData = userStates.get(userId);
     const userState = userData?.state;
 
-    if (!userState) {
-        await ctx.reply('Please use the menu buttons to interact with the bot.');
+    if (!userState || !userState.startsWith('note_')) {
         return;
     }
 
-    switch (userState) {
-        case 'deadline_add_title':
-            // Save task title and ask for due date
-            userStates.set(userId, { 
-                state: 'deadline_add_date',
-                currentTask: { title: ctx.message.text }
-            });
-            await ctx.reply(
-                'Enter the due date for your task:\n' +
-                'Use format DD.MM.YYYY (example: 25.12.2024)'
-            );
-            break;
+    if (userState === 'note_create_content') {
+        const userNotesList = userNotes.get(userId) || [];
+        const newNote = {
+            ...userData.currentNote,
+            content: ctx.message.text,
+            lastModified: new Date()
+        };
+        userNotesList.push(newNote);
+        userNotes.set(userId, userNotesList);
 
-        case 'deadline_add_date':
-            const dateText = ctx.message.text;
-            const dateRegex = /^(\d{2})\.(\d{2})\.(\d{4})$/;
-            const match = dateText.match(dateRegex);
-
-            if (!match) {
-                await ctx.reply(
-                    '❌ Invalid date format!\n' +
-                    'Please use DD.MM.YYYY (example: 25.12.2024)'
-                );
-                return;
-            }
-
-            const [_, day, month, year] = match;
-            const dueDate = new Date(year, month - 1, day);
-            
-            if (isNaN(dueDate.getTime()) || dueDate < new Date()) {
-                await ctx.reply('❌ Please enter a valid future date!');
-                return;
-            }
-
-            // Save the date and show notification options
-            userStates.set(userId, {
-                ...userData,
-                state: 'deadline_add_notification',
-                currentTask: {
-                    ...userData.currentTask,
-                    dueDate: dateText
-                }
-            });
-
-            await ctx.reply(
-                'When would you like to be notified about this task?',
-                notificationOptions
-            );
-            break;
-
-        case 'deadline_custom_notification':
-            const days = parseInt(ctx.message.text);
-            if (isNaN(days) || days < 0) {
-                await ctx.reply('Please enter a valid number of days (0 or more)');
-                return;
-            }
-
-            const userTaskList = userTasks.get(userId) || [];
-            userTaskList.push({
-                ...userData.currentTask,
-                notificationDays: days,
-                created: new Date()
-            });
-            userTasks.set(userId, userTaskList);
-
-            await ctx.reply(
-                `✅ Task added successfully!\n\n` +
-                `Title: ${userData.currentTask.title}\n` +
-                `Due date: ${userData.currentTask.dueDate}\n` +
-                `Notification: ${days} days before`,
-                tasksSubmenu
-            );
-
-            userStates.set(userId, { state: 'deadlines' });
-            break;
-
-        default:
-            await ctx.reply('Please use the menu buttons to interact with the bot.');
+        await ctx.reply('✅ Note saved successfully!', notesSubmenu);
+        userStates.set(userId, { state: 'notes' });
     }
 });
+
+// View all notes
+bot.action('note_view_all', safeCallback(async (ctx) => {
+    const userId = ctx.from.id;
+    const userNotesList = userNotes.get(userId) || [];
+
+    if (userNotesList.length === 0) {
+        await ctx.reply('You have no notes yet!', notesSubmenu);
+        return;
+    }
+
+    // Group notes by category
+    const notesByCategory = {};
+    userNotesList.forEach(note => {
+        if (!notesByCategory[note.category]) {
+            notesByCategory[note.category] = [];
+        }
+        notesByCategory[note.category].push(note);
+    });
+
+    // Create formatted message
+    let message = '📝 Your Notes:\n\n';
+    for (const [category, notes] of Object.entries(notesByCategory)) {
+        message += `📂 ${category.toUpperCase()}:\n`;
+        notes.forEach((note, index) => {
+            const date = moment(note.lastModified).format('DD.MM.YY HH:mm');
+            message += `${index + 1}. [${date}] ${note.content.substring(0, 40)}...\n`;
+        });
+        message += '\n';
+    }
+
+    // Create buttons for each note
+    const buttons = userNotesList.map(note => {
+        const preview = note.content.substring(0, 20) + '...';
+        return [Markup.button.callback(
+            `${note.category}: ${preview}`,
+            `view_note_${note.id}`
+        )];
+    });
+
+    buttons.push([Markup.button.callback('« Back', 'menu_notes')]);
+
+    // Send overview first
+    await ctx.reply(message);
+    
+    // Then send buttons for detailed view
+    await ctx.reply(
+        'Select a note to view full content:',
+        Markup.inlineKeyboard(buttons)
+    );
+}));
+
+// View notes by category
+bot.action('note_view_categories', safeCallback(async (ctx) => {
+    const userId = ctx.from.id;
+    const userNotesList = userNotes.get(userId) || [];
+
+    if (userNotesList.length === 0) {
+        await ctx.reply('You have no notes yet!', notesSubmenu);
+        return;
+    }
+
+    const categories = [...new Set(userNotesList.map(note => note.category))];
+    const buttons = categories.map(category => {
+        const count = userNotesList.filter(note => note.category === category).length;
+        return [Markup.button.callback(
+            `${category.toUpperCase()} (${count})`,
+            `view_category_${category}`
+        )];
+    });
+
+    buttons.push([Markup.button.callback('« Back', 'menu_notes')]);
+
+    await ctx.reply(
+        'Select category to view notes:',
+        Markup.inlineKeyboard(buttons)
+    );
+}));
+
+// View notes in category
+bot.action(/view_category_(.+)/, safeCallback(async (ctx) => {
+    const userId = ctx.from.id;
+    const category = ctx.match[1];
+    const userNotesList = userNotes.get(userId) || [];
+    const categoryNotes = userNotesList.filter(note => note.category === category);
+
+    let message = `📂 Category: ${category.toUpperCase()}\n\n`;
+    const buttons = categoryNotes.map(note => {
+        const date = moment(note.lastModified).format('DD.MM.YY HH:mm');
+        message += `[${date}] ${note.content.substring(0, 40)}...\n\n`;
+        return [Markup.button.callback(
+            `${note.content.substring(0, 20)}...`,
+            `view_note_${note.id}`
+        )];
+    });
+
+    buttons.push([Markup.button.callback('« Back to Categories', 'note_view_categories')]);
+
+    await ctx.reply(message);
+    await ctx.reply(
+        'Select a note to view full content:',
+        Markup.inlineKeyboard(buttons)
+    );
+}));
+
+// View single note
+bot.action(/view_note_(.+)/, safeCallback(async (ctx) => {
+    const userId = ctx.from.id;
+    const noteId = ctx.match[1];
+    const userNotesList = userNotes.get(userId) || [];
+    const note = userNotesList.find(n => n.id === noteId);
+
+    if (!note) {
+        await ctx.reply('Note not found.', notesSubmenu);
+        return;
+    }
+
+    const formattedDate = moment(note.lastModified).format('DD.MM.YYYY HH:mm');
+    const message = 
+        `📂 Category: ${note.category}\n` +
+        `🕒 Date: ${formattedDate}\n\n` +
+        note.content;
+
+    await ctx.reply(message, Markup.inlineKeyboard([
+        [Markup.button.callback('🗑️ Delete', `delete_note_${noteId}`)],
+        [Markup.button.callback('« Back to Notes', 'note_view_all')]
+    ]));
+}));
+
+// Delete note
+bot.action(/delete_note_(.+)/, safeCallback(async (ctx) => {
+    const userId = ctx.from.id;
+    const noteId = ctx.match[1];
+    const userNotesList = userNotes.get(userId) || [];
+    const noteIndex = userNotesList.findIndex(n => n.id === noteId);
+
+    if (noteIndex === -1) {
+        await ctx.reply('Note not found.', notesSubmenu);
+        return;
+    }
+
+    const deletedNote = userNotesList.splice(noteIndex, 1)[0];
+    userNotes.set(userId, userNotesList);
+
+    await ctx.reply('✅ Note deleted successfully!', notesSubmenu);
+}));
 
 // View all tasks
 bot.action('deadline_view', async (ctx) => {
@@ -389,13 +588,59 @@ bot.action(/delete_task_(\d+)/, async (ctx) => {
     }
 });
 
+// Handle PDF export
+bot.action(/export_note_(.+)/, async (ctx) => {
+    await ctx.answerCbQuery();
+    const userId = ctx.from.id;
+    const noteId = ctx.match[1];
+    const userNotesList = userNotes.get(userId) || [];
+    const note = userNotesList.find(n => n.id === noteId);
+
+    if (!note) {
+        await ctx.reply('Note not found.', notesSubmenu);
+        return;
+    }
+
+    try {
+        await ctx.reply('📄 Creating PDF...');
+        
+        const doc = new PDFDocument();
+        const filename = `note_${noteId}.pdf`;
+        const filePath = path.join(NOTES_DIR, filename);
+
+        doc.pipe(fs.createWriteStream(filePath));
+
+        // Add content to PDF
+        doc.fontSize(20).text(note.title, { align: 'center' });
+        doc.moveDown();
+        doc.fontSize(12).text(`Category: ${note.category}`);
+        doc.fontSize(12).text(`Last modified: ${moment(note.lastModified).format('DD.MM.YYYY HH:mm')}`);
+        doc.moveDown();
+        doc.fontSize(12).text(note.content);
+
+        doc.end();
+
+        // Wait for the file to be written
+        await new Promise(resolve => setTimeout(resolve, 1000));
+
+        // Send the PDF file
+        await ctx.replyWithDocument({ source: filePath });
+        
+        // Clean up
+        fs.unlinkSync(filePath);
+    } catch (error) {
+        console.error('PDF creation error:', error);
+        await ctx.reply('Sorry, there was an error creating the PDF.');
+    }
+});
+
 // Helper function to parse date
 function parseDate(dateStr) {
     const [day, month, year] = dateStr.split('.');
     return new Date(year, month - 1, day);
 }
 
-// Launch bot
+// Launch bot with error handling
 console.log('Connecting to Telegram...');
 
 bot.launch()
