@@ -1,15 +1,42 @@
 // Import dotenv at the top
 require('dotenv').config();
 
+// Debug environment variables
+console.log('Environment variables:');
+console.log('TELEGRAM_BOT_TOKEN:', process.env.TELEGRAM_BOT_TOKEN ? 'Present' : 'Missing');
+if (process.env.TELEGRAM_BOT_TOKEN) {
+    console.log('Token length:', process.env.TELEGRAM_BOT_TOKEN.length);
+    console.log('Token format:', process.env.TELEGRAM_BOT_TOKEN.includes(':') ? 'Valid format' : 'Invalid format');
+}
+console.log('OPENAI_API_KEY:', process.env.OPENAI_API_KEY ? 'Present' : 'Missing');
+
+// Verify dotenv is working
+console.log('Current working directory:', process.cwd());
+console.log('Environment file path:', require('path').join(process.cwd(), '.env'));
+
 const { Telegraf, Markup } = require('telegraf');
-const OpenAI = require('openai');
 const PDFDocument = require('pdfkit');
 const MarkdownIt = require('markdown-it');
 const moment = require('moment');
 const fs = require('fs');
 const path = require('path');
+const { GifsModule } = require('./features/gifs/gifs.module');
 
 console.log('Bot is starting...');
+
+// Initialize OpenAI only if API key is present
+let openai;
+if (process.env.OPENAI_API_KEY) {
+    try {
+        const OpenAI = require('openai');
+        openai = new OpenAI({
+            apiKey: process.env.OPENAI_API_KEY
+        });
+        console.log('OpenAI initialized successfully');
+    } catch (error) {
+        console.warn('Failed to initialize OpenAI:', error.message);
+    }
+}
 
 // Use environment variables instead of hardcoded values
 const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
@@ -20,11 +47,6 @@ const userTasks = new Map();
 
 // Initialize markdown parser
 const md = new MarkdownIt();
-
-// Initialize OpenAI with environment variable
-const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY
-});
 
 // Create notes directory if it doesn't exist
 const NOTES_DIR = path.join(__dirname, 'notes');
@@ -224,7 +246,7 @@ bot.action('menu_flashcards', safeCallback(async (ctx) => {
 }));
 
 // Handle other menu options
-['menu_gifs', 'menu_motivation', 'menu_email', 'menu_pdf'].forEach(menu => {
+['menu_motivation', 'menu_email', 'menu_pdf'].forEach(menu => {
     bot.action(menu, safeCallback(async (ctx) => {
         const featureName = menu.replace('menu_', '').toUpperCase();
         await ctx.reply(
@@ -643,6 +665,19 @@ function parseDate(dateStr) {
     const [day, month, year] = dateStr.split('.');
     return new Date(year, month - 1, day);
 }
+
+// Initialize features
+const gifsModule = new GifsModule();
+gifsModule.register(bot);
+
+// Add the real GIFs handler
+bot.action('menu_gifs', safeCallback(async (ctx) => {
+    userStates.set(ctx.from.id, { state: 'gifs' });
+    await ctx.reply(
+        '🎬 Send me a video (max 15 seconds) and I\'ll convert it to a GIF!',
+        Markup.inlineKeyboard([[Markup.button.callback('« Back to Main Menu', 'back_main')]])
+    );
+}));
 
 // Launch bot with error handling
 console.log('Connecting to Telegram...');
