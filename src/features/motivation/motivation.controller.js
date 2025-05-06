@@ -1,9 +1,19 @@
 const { MotivationService } = require('./motivation.service');
 const { Markup } = require('telegraf');
+const fs = require('fs');
+const path = require('path');
 
 class MotivationController {
     constructor() {
         this.motivationService = new MotivationService();
+        this.imagesDir = path.join(__dirname, '../../assets/porsche');
+        this.images = fs.readdirSync(this.imagesDir).filter(f => /\.(jpg|jpeg|png)$/i.test(f));
+    }
+
+    getRandomImagePath() {
+        if (!this.images || this.images.length === 0) return null;
+        const randomImage = this.images[Math.floor(Math.random() * this.images.length)];
+        return path.join(this.imagesDir, randomImage);
     }
 
     async handleMotivationCommand(ctx) {
@@ -36,6 +46,7 @@ class MotivationController {
     }
 
     async showFrequencySelection(ctx, language) {
+        try { await ctx.deleteMessage(); } catch (e) {}
         await ctx.reply('How frequently do you want to receive motivational messages?',
             Markup.inlineKeyboard([
                 [Markup.button.callback('Twice a day', `freq_twice_${language}`)],
@@ -48,6 +59,7 @@ class MotivationController {
 
     async handleLanguageSelection(ctx) {
         const language = ctx.match[1]; // nl, en, or uk
+        try { await ctx.deleteMessage(); } catch (e) {}
         await this.showFrequencySelection(ctx, language);
     }
 
@@ -60,6 +72,7 @@ class MotivationController {
         const frequency = match[1];
         const language = match[2];
         const userId = ctx.from.id;
+        try { await ctx.deleteMessage(); } catch (e) {}
 
         await this.motivationService.setUserPreferences(userId, language, frequency);
         const message = await this.motivationService.generateMotivationMessage(language);
@@ -93,7 +106,12 @@ class MotivationController {
             uk: `Ви підписалися на мотиваційні повідомлення українською (${frequencyText[frequency].uk})! 🚗\n\nВаше перше повідомлення:\n\n${message}`
         };
 
-        await ctx.reply(confirmText[language] || confirmText['en']);
+        const imagePath = this.getRandomImagePath();
+        if (imagePath) {
+            await ctx.replyWithPhoto({ source: imagePath }, { caption: confirmText[language] || confirmText['en'] });
+        } else {
+            await ctx.reply(confirmText[language] || confirmText['en']);
+        }
     }
 
     async sendDailyMotivation(bot) {
@@ -105,7 +123,12 @@ class MotivationController {
                     if (this.motivationService.shouldSendMessage(userId)) {
                         const preferences = this.motivationService.getUserPreferences(userId);
                         const message = await this.motivationService.generateMotivationMessage(preferences.language);
-                        await bot.telegram.sendMessage(userId, message);
+                        const imagePath = this.getRandomImagePath();
+                        if (imagePath) {
+                            await bot.telegram.sendPhoto(userId, { source: imagePath }, { caption: message });
+                        } else {
+                            await bot.telegram.sendMessage(userId, message);
+                        }
                         this.motivationService.updateLastSent(userId);
                     }
                 } catch (error) {
