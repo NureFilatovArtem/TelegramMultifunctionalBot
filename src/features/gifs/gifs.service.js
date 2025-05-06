@@ -1,7 +1,7 @@
 const { spawn } = require('child_process');
 const { promisify } = require('util');
 const { exec } = require('child_process');
-const { createWriteStream } = require('fs');
+const { createWriteStream, existsSync } = require('fs');
 const { join } = require('path');
 const { tmpdir } = require('os');
 const { v4: uuidv4 } = require('uuid');
@@ -22,9 +22,28 @@ class GifsService {
         ];
     }
 
+    async checkFFmpeg() {
+        try {
+            await execAsync('ffmpeg -version');
+            await execAsync('ffprobe -version');
+            return true;
+        } catch (error) {
+            console.error('FFmpeg не установлен или не доступен:', error);
+            return false;
+        }
+    }
+
     async handleVideo(ctx) {
         try {
             console.log('GifsService.handleVideo вызван');
+
+            // Проверяем наличие FFmpeg
+            const ffmpegAvailable = await this.checkFFmpeg();
+            if (!ffmpegAvailable) {
+                await ctx.reply('Ошибка: FFmpeg не установлен или не доступен. Пожалуйста, установите FFmpeg и добавьте его в PATH.');
+                return;
+            }
+
             if (!ctx.message || !('video' in ctx.message)) {
                 await ctx.reply('Пожалуйста, отправьте видеофайл.');
                 return;
@@ -69,30 +88,62 @@ class GifsService {
                 return;
             }
             const buffer = await response.buffer();
-            const writeStream = createWriteStream(videoPath);
-            writeStream.write(buffer);
-            writeStream.end();
+            console.log('Видео скачано, записываю файл...');
+            
+            // Запись файла с проверкой
+            await new Promise((resolve, reject) => {
+                const writeStream = createWriteStream(videoPath);
+                writeStream.write(buffer);
+                writeStream.end();
+                writeStream.on('finish', () => {
+                    if (existsSync(videoPath)) {
+                        console.log('Файл успешно записан:', videoPath);
+                        resolve();
+                    } else {
+                        reject(new Error('Файл не был создан'));
+                    }
+                });
+                writeStream.on('error', reject);
+            });
+
+            console.log('Файл записан, проверяю длительность...');
 
             // Проверка длительности видео
-            const { stdout } = await execAsync(`ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 ${videoPath}`);
+            const { stdout } = await execAsync(`ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${videoPath}"`);
             const duration = parseFloat(stdout);
+            console.log('Длительность видео:', duration, 'секунд');
 
             if (duration > this.MAX_VIDEO_DURATION) {
                 await ctx.reply(`Видео слишком длинное. Максимальная длительность — ${this.MAX_VIDEO_DURATION} секунд.`);
-                await execAsync(`rm ${videoPath}`);
+                await execAsync(`rm "${videoPath}"`);
                 return;
             }
 
             // Конвертация в GIF
-            await this.convertToGif(videoPath, gifPath);
+            console.log('Начинаю конвертацию в GIF...');
+            try {
+                await this.convertToGif(videoPath, gifPath);
+                console.log('GIF создан, отправляю...');
 
-            // Отправка GIF пользователю
-            await ctx.replyWithAnimation({
-                source: gifPath
-            });
+                if (!existsSync(gifPath)) {
+                    throw new Error('GIF файл не был создан');
+                }
 
-            // Очистка временных файлов
-            await execAsync(`rm ${videoPath} ${gifPath}`);
+                // Отправка GIF пользователю
+                await ctx.replyWithAnimation({
+                    source: gifPath
+                });
+
+                // Очистка временных файлов
+                await execAsync(`rm "${videoPath}" "${gifPath}"`);
+                console.log('Временные файлы удалены.');
+            } catch (error) {
+                console.error('Ошибка при конвертации:', error);
+                await ctx.reply('Произошла ошибка при конвертации видео в GIF. Попробуйте другое видео.');
+                // Очистка в случае ошибки
+                if (existsSync(videoPath)) await execAsync(`rm "${videoPath}"`);
+                if (existsSync(gifPath)) await execAsync(`rm "${gifPath}"`);
+            }
 
         } catch (error) {
             console.error('Ошибка при обработке видео:', error);
@@ -102,6 +153,11 @@ class GifsService {
 
     async convertToGif(inputPath, outputPath) {
         return new Promise((resolve, reject) => {
+            console.log('Запуск FFmpeg с параметрами:', {
+                input: inputPath,
+                output: outputPath
+            });
+
             const ffmpeg = spawn('ffmpeg', [
                 '-i', inputPath,
                 '-vf', 'fps=10,scale=320:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse',
@@ -109,15 +165,25 @@ class GifsService {
                 outputPath
             ]);
 
+            let errorOutput = '';
+
+            ffmpeg.stderr.on('data', (data) => {
+                errorOutput += data.toString();
+                console.log('FFmpeg:', data.toString());
+            });
+
             ffmpeg.on('close', (code) => {
                 if (code === 0) {
+                    console.log('FFmpeg успешно завершил работу');
                     resolve();
                 } else {
-                    reject(new Error(`FFmpeg завершился с кодом ${code}`));
+                    console.error('FFmpeg ошибка:', errorOutput);
+                    reject(new Error(`FFmpeg завершился с кодом ${code}: ${errorOutput}`));
                 }
             });
 
             ffmpeg.on('error', (err) => {
+                console.error('FFmpeg ошибка запуска:', err);
                 reject(err);
             });
         });

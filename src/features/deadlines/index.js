@@ -1,5 +1,7 @@
 const { Markup } = require('telegraf');
 const { v4: uuidv4 } = require('uuid');
+const { Telegraf } = require('telegraf');
+require('dotenv').config();
 
 // Deadline states
 const states = {

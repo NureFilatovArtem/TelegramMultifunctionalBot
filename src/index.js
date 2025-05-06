@@ -21,6 +21,7 @@ const moment = require('moment');
 const fs = require('fs');
 const path = require('path');
 const { GifsModule } = require('./features/gifs/gifs.module');
+const { MotivationModule } = require('./features/motivation/motivation.module');
 
 console.log('Bot is starting...');
 
@@ -245,15 +246,17 @@ bot.action('menu_flashcards', safeCallback(async (ctx) => {
     await ctx.reply('🎯 Flashcards Menu:', flashcardsSubmenu);
 }));
 
-// Handle other menu options
-['menu_motivation', 'menu_email', 'menu_pdf'].forEach(menu => {
-    bot.action(menu, safeCallback(async (ctx) => {
-        const featureName = menu.replace('menu_', '').toUpperCase();
-        await ctx.reply(
-            `${featureName} feature coming soon...`,
-            Markup.inlineKeyboard([[Markup.button.callback('« Back to Main Menu', 'back_main')]])
-        );
-    }));
+// Подключаю MotivationModule
+let motivationModule;
+try {
+    motivationModule = new MotivationModule(bot);
+} catch (error) {
+    console.error('Error initializing MotivationModule:', error);
+}
+
+// Новый обработчик для menu_motivation
+bot.action('menu_motivation', async (ctx) => {
+    await motivationModule.controller.handleMotivationCommand(ctx);
 });
 
 // Handle back to main menu
