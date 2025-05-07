@@ -215,13 +215,27 @@ bot.telegram.getMe().then((botInfo) => {
     console.error('Failed to get bot info:', err);
 });
 
+// Reply Keyboard с кнопкой Main Menu
+const replyMainMenuKeyboard = {
+    reply_markup: {
+        keyboard: [
+            ['Main Menu']
+        ],
+        resize_keyboard: true,
+        one_time_keyboard: false
+    }
+};
+
 // Start command
 bot.command('start', (ctx) => {
     userStates.set(ctx.from.id, { state: 'main' });
     return ctx.reply(
         '👋 Welcome to MultiFunction Bot!\n\n' +
         'Choose what you want to do:',
-        mainMenuButtons
+        {
+            reply_markup: mainMenuButtons.reply_markup,
+            ...replyMainMenuKeyboard
+        }
     );
 });
 
@@ -262,7 +276,7 @@ bot.action('menu_motivation', async (ctx) => {
 // Handle back to main menu
 bot.action('back_main', safeCallback(async (ctx) => {
     userStates.set(ctx.from.id, { state: 'main' });
-    await ctx.reply('Main Menu:', mainMenuButtons);
+    await ctx.reply('Main Menu:', Markup.inlineKeyboard(mainMenuButtons.reply_markup.inline_keyboard));
 }));
 
 // Handle task actions
@@ -680,6 +694,17 @@ bot.action('menu_gifs', safeCallback(async (ctx) => {
         '🎬 Send me a video (max 15 seconds) and I\'ll convert it to a GIF!',
         Markup.inlineKeyboard([[Markup.button.callback('« Back to Main Menu', 'back_main')]])
     );
+}));
+
+// Обработка текстовой кнопки Main Menu (Reply Keyboard)
+bot.hears('Main Menu', async (ctx) => {
+    await ctx.reply('Main Menu:', Markup.inlineKeyboard(mainMenuButtons.reply_markup.inline_keyboard));
+});
+
+// Обработка inline-кнопки возврата
+bot.action('back_main', safeCallback(async (ctx) => {
+    userStates.set(ctx.from.id, { state: 'main' });
+    await ctx.reply('Main Menu:', Markup.inlineKeyboard(mainMenuButtons.reply_markup.inline_keyboard));
 }));
 
 // Launch bot with error handling
