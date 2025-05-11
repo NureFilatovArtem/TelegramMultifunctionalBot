@@ -1,58 +1,19 @@
-const { OpenAI } = require('openai');
-const { promisify } = require('util');
-const { exec } = require('child_process');
-
-const execAsync = promisify(exec);
+const { generateQuestionsGemini } = require('../english-test/gemini.service');
 
 class MotivationService {
     constructor() {
-        this.openai = new OpenAI({
-            apiKey: process.env.OPENAI_API_KEY
-        });
-        // Store user preferences: { userId: { language: string, frequency: string, lastSent: Date } }
+        this.subscribers = new Map();
         this.userPreferences = new Map();
+        this.lastSent = new Map();
     }
 
     async generateMotivationMessage(language) {
-        const languagePrompts = {
-            'en': "Generate a motivational message in English about working hard today to achieve the dream of owning a Porsche 911 GT3 RS.",
-            'nl': "Genereer een motiverende boodschap in het Nederlands over hard werken vandaag om de droom van het bezitten van een Porsche 911 GT3 RS te bereiken.",
-            'uk': "Згенеруйте мотиваційне повідомлення українською мовою про важливість наполегливої роботи сьогодні для досягнення мрії про володіння Porsche 911 GT3 RS."
-        };
-
-        const systemPrompts = {
-            'en': "You are a motivational speaker focused on Porsche cars. Generate short, powerful motivational messages in English that connect daily work and success to owning a Porsche 911 GT3 RS. Keep messages under 200 characters and make them personal and impactful.",
-            'nl': "Je bent een motiverende spreker gericht op Porsche-auto's. Genereer korte, krachtige motiverende berichten in het Nederlands die dagelijks werk en succes verbinden met het bezitten van een Porsche 911 GT3 RS. Houd berichten onder 200 tekens en maak ze persoonlijk en impactvol.",
-            'uk': "Ви мотиваційний спікер, зосереджений на автомобілях Porsche. Створюйте короткі, потужні мотиваційні повідомлення українською мовою, які пов'язують щоденну роботу та успіх з володінням Porsche 911 GT3 RS. Зберігайте повідомлення до 200 символів і робіть їх особистими та ефектними."
-        };
-
-        try {
-            const completion = await this.openai.chat.completions.create({
-                model: "gpt-3.5-turbo",
-                messages: [
-                    {
-                        role: "system",
-                        content: systemPrompts[language]
-                    },
-                    {
-                        role: "user",
-                        content: languagePrompts[language]
-                    }
-                ],
-                max_tokens: 150,
-                temperature: 0.8
-            });
-
-            return completion.choices[0].message.content;
-        } catch (error) {
-            console.error('Error generating motivation message:', error);
-            const fallbackMessages = {
-                'en': "Remember: Every hour of smart work brings you closer to your Porsche 911 GT3 RS. Stay focused! 🚗",
-                'nl': "Onthoud: elk uur slim werk brengt je dichter bij je Porsche 911 GT3 RS. Blijf gefocust! 🚗",
-                'uk': "Пам'ятайте: кожна година розумної роботи наближає вас до вашої Porsche 911 GT3 RS. Залишайтеся зосередженими! 🚗"
-            };
-            return fallbackMessages[language];
-        }
+        // Формируем prompt для Gemini
+        const prompt = `Generate a short motivational message for a person in ${language === 'nl' ? 'Dutch' : language === 'uk' ? 'Ukrainian' : 'English'}. The message should be positive, inspiring, and suitable for daily encouragement. Return only the message text.`;
+        const model = require('@google/generative-ai').GoogleGenerativeAI(process.env.GEMINI_API_KEY).getGenerativeModel({ model: "gemini-pro" });
+        const result = await model.generateContent(prompt);
+        const response = await result.response;
+        return response.text();
     }
 
     async setUserPreferences(userId, language, frequency) {

@@ -72,6 +72,9 @@ const mainMenuButtons = Markup.inlineKeyboard([
     [
         Markup.button.callback('📤 Email FWD', 'menu_email'),
         Markup.button.callback('📄 PDF Maker', 'menu_pdf')
+    ],
+    [
+        Markup.button.callback('🇬🇧 English Improvement', 'english_improvement')
     ]
 ]);
 
@@ -276,7 +279,7 @@ bot.action('menu_motivation', async (ctx) => {
 // Handle back to main menu
 bot.action('back_main', safeCallback(async (ctx) => {
     userStates.set(ctx.from.id, { state: 'main' });
-    await ctx.reply('Main Menu:', Markup.inlineKeyboard(mainMenuButtons.reply_markup.inline_keyboard));
+    await ctx.reply('Main Menu:', { reply_markup: mainMenuButtons.reply_markup });
 }));
 
 // Handle task actions
@@ -696,16 +699,25 @@ bot.action('menu_gifs', safeCallback(async (ctx) => {
     );
 }));
 
+// Универсальная функция показа главного меню
+function showMainMenu(ctx) {
+    return ctx.reply('Main Menu:', { reply_markup: mainMenuButtons.reply_markup });
+}
+
 // Обработка текстовой кнопки Main Menu (Reply Keyboard)
 bot.hears('Main Menu', async (ctx) => {
-    await ctx.reply('Main Menu:', Markup.inlineKeyboard(mainMenuButtons.reply_markup.inline_keyboard));
+    await showMainMenu(ctx);
 });
 
 // Обработка inline-кнопки возврата
 bot.action('back_main', safeCallback(async (ctx) => {
     userStates.set(ctx.from.id, { state: 'main' });
-    await ctx.reply('Main Menu:', Markup.inlineKeyboard(mainMenuButtons.reply_markup.inline_keyboard));
+    await showMainMenu(ctx);
 }));
+
+// Инициализация контроллера тестирования английского
+const EnglishTestController = require('./features/english-test/english-test.controller');
+new EnglishTestController(bot);
 
 // Launch bot with error handling
 console.log('Connecting to Telegram...');
