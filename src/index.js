@@ -699,21 +699,41 @@ bot.action('menu_gifs', safeCallback(async (ctx) => {
     );
 }));
 
-// Универсальная функция показа главного меню
+// Универсальная функция показа главного меню (без reply_to_message_id)
 function showMainMenu(ctx) {
     return ctx.reply('Main Menu:', { reply_markup: mainMenuButtons.reply_markup });
 }
 
+// Функция показа главного меню с reply_to_message_id (для reply-кнопки)
+function showMainMenuReply(ctx) {
+    console.log('showMainMenuReply called');
+    console.log('mainMenuButtons:', JSON.stringify(mainMenuButtons.reply_markup, null, 2));
+    try {
+        return ctx.telegram.sendMessage(
+            ctx.chat.id,
+            'Main Menu:',
+            {
+                reply_markup: mainMenuButtons.reply_markup,
+                reply_to_message_id: ctx.message.message_id
+            }
+        );
+    } catch (e) {
+        console.error('Ошибка в showMainMenuReply:', e);
+        throw e;
+    }
+}
+
 // Обработка текстовой кнопки Main Menu (Reply Keyboard)
 bot.hears('Main Menu', async (ctx) => {
-    await showMainMenu(ctx);
+    console.log('ctx.message:', ctx.message);
+    try {
+        await showMainMenuReply(ctx);
+    } catch (e) {
+        console.error('Ошибка при отправке меню:', e);
+        await ctx.reply('Ошибка при отправке меню: ' + e.message);
+    }
+    try { await ctx.deleteMessage(); } catch (e) {}
 });
-
-// Обработка inline-кнопки возврата
-bot.action('back_main', safeCallback(async (ctx) => {
-    userStates.set(ctx.from.id, { state: 'main' });
-    await showMainMenu(ctx);
-}));
 
 // Инициализация контроллера тестирования английского
 const EnglishTestController = require('./features/english-test/english-test.controller');
@@ -741,4 +761,9 @@ process.once('SIGINT', () => {
 process.once('SIGTERM', () => {
     console.log('Bot is stopping...');
     bot.stop('SIGTERM');
+});
+
+// Глобальный обработчик для дебага всех текстовых сообщений
+bot.on('text', (ctx) => {
+    console.log('[DEBUG] Любой текст:', ctx.message.text);
 }); 
