@@ -77,3 +77,33 @@ INSERT INTO test_subcategories (category_id, name, description) VALUES
 (3, 'Past Perfect', 'Tests on Past Perfect tense'),
 (4, 'Reading Comprehension', 'Tests on reading and understanding texts')
 ON CONFLICT DO NOTHING; 
+
+
+-- Если таблица questions уже существует и нужно ее изменить:
+ALTER TABLE questions
+    ADD COLUMN IF NOT EXISTS level VARCHAR(10) NOT NULL DEFAULT 'B1', -- Ставим DEFAULT на время миграции, потом можно убрать
+    ADD COLUMN IF NOT EXISTS question_type VARCHAR(50) NOT NULL DEFAULT 'multiple_choice', -- Аналогично
+    ADD COLUMN IF NOT EXISTS example TEXT NULL;
+
+-- Если options сейчас TEXT, и хотим перевести в JSONB (сначала убедись, что данные валидный JSON или сделай бэкап)
+-- ALTER TABLE questions
+--     ALTER COLUMN options TYPE JSONB USING options::jsonb;
+-- Если options еще нет, или создаем заново:
+-- options JSONB NULL,
+
+-- Если создаем таблицу questions с нуля (или пересоздаем):
+CREATE TABLE IF NOT EXISTS questions (
+    id SERIAL PRIMARY KEY,
+    subcategory_id INTEGER NOT NULL REFERENCES subcategories(id) ON DELETE CASCADE, -- ON DELETE CASCADE если хочешь, чтобы при удалении подкатегории удалялись и ее вопросы
+    level VARCHAR(10) NOT NULL,
+    question_text TEXT NOT NULL,
+    question_type VARCHAR(50) NOT NULL, -- 'multiple_choice', 'fill_in_blank', 'true_false'
+    options JSONB NULL, -- Для multiple_choice, true/false. Для fill_in_blank может быть NULL
+    correct_answer TEXT NOT NULL,
+    explanation TEXT NULL,
+    example TEXT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP, -- Полезно для отслеживания
+    CONSTRAINT uq_question_per_subcategory_level UNIQUE (subcategory_id, level, question_text) -- Предотвращает полные дубликаты
+);
+
+CREATE INDEX IF NOT EXISTS idx_questions_subcategory_level ON questions (subcategory_id, level); -- Индекс для быстрого поиска по теме и уровню

@@ -19,6 +19,9 @@ pool.connect((err, client, release) => {
     }
 });
 
+
+
+
 // Функции для работы с категориями
 const getCategories = async () => {
     try {
@@ -44,19 +47,12 @@ const getSubcategories = async (categoryId) => {
     }
 };
 
-// Функции для работы с вопросами
-const getQuestions = async (subcategoryId, limit = 10) => {
-    try {
-        const result = await pool.query(
-            'SELECT * FROM questions WHERE subcategory_id = $1 ORDER BY RANDOM() LIMIT $2',
-            [subcategoryId, limit]
-        );
-        return result.rows;
-    } catch (err) {
-        console.error('Error getting questions:', err);
-        throw err;
-    }
-};
+// Примерно так:
+async function getQuestions(subcategoryId, level) {
+    const query = 'SELECT * FROM questions WHERE subcategory_id = $1 AND level = $2 ORDER BY RANDOM() LIMIT 20'; // Добавлен level и LIMIT
+    const { rows } = await pool.query(query, [subcategoryId, level]);
+    return rows;
+}
 
 // Функции для работы с результатами
 const saveUserResult = async (userId, testId, score, totalQuestions, wrongAnswers) => {
@@ -152,6 +148,38 @@ const deactivateUserTestProgress = async (userId, subcategoryId) => {
     }
 };
 
+
+async function saveGeneratedQuestions(subcategoryId, level, questionsArray) {
+    const client = await pool.connect();
+    try {
+        await client.query('BEGIN');
+        const insertQuery = `
+            INSERT INTO questions (subcategory_id, level, question_text, question_type, options, correct_answer, explanation, example)
+            VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+            ON CONFLICT (question_text, subcategory_id, level) DO NOTHING; 
+        `; // ON CONFLICT чтобы избежать дубликатов, если текст вопроса + подкатегория + уровень уникальны
+
+        for (const q of questionsArray) {
+            await client.query(insertQuery, [
+                subcategoryId,
+                level,
+                q.question_text,
+                q.question_type,
+                JSON.stringify(q.options || []), // Сохраняем как JSON строку
+                q.correct_answer,
+                q.explanation,
+                q.example
+            ]);
+        }
+        await client.query('COMMIT');
+    } catch (e) {
+        await client.query('ROLLBACK');
+        throw e;
+    } finally {
+        client.release();
+    }
+}
+
 module.exports = {
     pool,
     getCategories,
@@ -162,5 +190,6 @@ module.exports = {
     getSubcategoryById,
     saveUserTestProgress,
     getUserTestProgress,
-    deactivateUserTestProgress
+    deactivateUserTestProgress,
+    saveGeneratedQuestions 
 }; 

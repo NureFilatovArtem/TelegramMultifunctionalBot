@@ -91,4 +91,9 @@ class Flashcards {
     }
 }
 
-module.exports = Flashcards; 
+function register(bot) {
+    const flashcards = new Flashcards(bot);
+    flashcards.setupHandlers();
+}
+
+module.exports = { register }; 

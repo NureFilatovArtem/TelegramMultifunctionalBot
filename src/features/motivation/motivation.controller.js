@@ -144,4 +144,13 @@ class MotivationController {
     }
 }
 
-module.exports = { MotivationController }; 
+function register(bot) {
+    const controller = new MotivationController();
+    // Пример регистрации обработчиков:
+    bot.command('motivation', (ctx) => controller.handleMotivationCommand(ctx));
+    bot.action(/^lang_(nl|en|uk)$/, (ctx) => controller.handleLanguageSelection(ctx));
+    bot.action(/^freq_(twice|once|2days|week)_(nl|en|uk)$/, (ctx) => controller.handleFrequencySelection(ctx));
+    // Можно добавить другие обработчики, если нужно
+}
+
+module.exports = { register }; 

@@ -1,13 +1,8 @@
 const { GifsService } = require('./gifs.service');
 
-class GifsController {
-    constructor() {
-        this.gifsService = new GifsService();
-    }
-
-    async handleVideo(ctx) {
-        await this.gifsService.handleVideo(ctx);
-    }
+function register(bot) {
+    const gifsService = new GifsService();
+    bot.on('video', (ctx) => gifsService.handleVideo(ctx));
 }
 
-module.exports = { GifsController }; 
+module.exports = { register }; 

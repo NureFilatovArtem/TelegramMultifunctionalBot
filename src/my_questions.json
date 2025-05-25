@@ -1,0 +1,1385 @@
+[
+    {
+      "subcategory_name": "Present Simple",
+      "level": "A1",
+      "question_text": "She ____ to school every day.",
+      "question_type": "multiple_choice",
+      "options": ["go", "goes", "going", "went"],
+      "correct_answer": "goes",
+      "explanation": "Use 'goes' with third person singular in Present Simple.",
+      "example": "He goes to work by bus."
+    },
+    {
+      "subcategory_name": "Present Simple",
+      "level": "A1",
+      "question_text": "They ____ (not/like) pizza.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "don't like",
+      "explanation": "Use 'don't' with plural subjects in negative Present Simple.",
+      "example": "We don't eat meat."
+    },
+    {
+      "subcategory_name": "Present Simple",
+      "level": "A2",
+      "question_text": "Is this statement true or false: 'Present Simple is used for habits and routines.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Present Simple describes regular actions, habits, and general truths.",
+      "example": "I drink coffee every morning."
+    },
+    {
+      "subcategory_name": "Present Continuous",
+      "level": "A2",
+      "question_text": "What ____ you doing right now?",
+      "question_type": "multiple_choice",
+      "options": ["is", "are", "am", "be"],
+      "correct_answer": "are",
+      "explanation": "Use 'are' with 'you' in Present Continuous questions.",
+      "example": "What are you reading?"
+    },
+    {
+      "subcategory_name": "Present Continuous",
+      "level": "A2",
+      "question_text": "The children ____ (play) in the garden now.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "are playing",
+      "explanation": "Present Continuous = be + verb-ing for actions happening now.",
+      "example": "She is cooking dinner."
+    },
+    {
+      "subcategory_name": "Present Continuous",
+      "level": "B1",
+      "question_text": "Is this statement true or false: 'We can't use Present Continuous with stative verbs like 'know' or 'love'.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Stative verbs describe states, not actions, so they rarely use continuous forms.",
+      "example": "I know the answer (not 'I am knowing')."
+    },
+    {
+      "subcategory_name": "Past Simple",
+      "level": "A2",
+      "question_text": "Yesterday, I ____ to the cinema.",
+      "question_type": "multiple_choice",
+      "options": ["go", "went", "going", "gone"],
+      "correct_answer": "went",
+      "explanation": "'Went' is the past form of 'go' for completed past actions.",
+      "example": "We went shopping last weekend."
+    },
+    {
+      "subcategory_name": "Past Simple",
+      "level": "A2",
+      "question_text": "She ____ (not/finish) her homework yesterday.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "didn't finish",
+      "explanation": "Use 'didn't' + base verb for negative Past Simple.",
+      "example": "They didn't come to the party."
+    },
+    {
+      "subcategory_name": "Past Continuous",
+      "level": "B1",
+      "question_text": "While I ____ TV, my brother was studying.",
+      "question_type": "multiple_choice",
+      "options": ["watched", "was watching", "watch", "am watching"],
+      "correct_answer": "was watching",
+      "explanation": "Past Continuous shows an ongoing action in the past, often interrupted or simultaneous with another action.",
+      "example": "It was raining when we left."
+    },
+    {
+      "subcategory_name": "Past Continuous",
+      "level": "B1",
+      "question_text": "They ____ (walk) in the park when it started to snow.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "were walking",
+      "explanation": "Past Continuous = was/were + verb-ing for ongoing past actions.",
+      "example": "I was sleeping at midnight."
+    },
+    {
+      "subcategory_name": "Present Perfect",
+      "level": "B1",
+      "question_text": "I ____ never been to Japan.",
+      "question_type": "multiple_choice",
+      "options": ["has", "have", "had", "am"],
+      "correct_answer": "have",
+      "explanation": "Use 'have' with 'I' in Present Perfect for life experiences.",
+      "example": "We have lived here for five years."
+    },
+    {
+      "subcategory_name": "Present Perfect",
+      "level": "B1",
+      "question_text": "She ____ (just/arrive) at the airport.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "has just arrived",
+      "explanation": "Present Perfect = have/has + past participle for recent completed actions.",
+      "example": "He has already eaten lunch."
+    },
+    {
+      "subcategory_name": "Present Perfect",
+      "level": "B2",
+      "question_text": "Is this statement true or false: 'Present Perfect connects the past with the present.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Present Perfect shows past actions with present relevance or continuing effects.",
+      "example": "I have lost my keys (and still don't have them)."
+    },
+    {
+      "subcategory_name": "Articles",
+      "level": "A2",
+      "question_text": "I need ____ pencil to write.",
+      "question_type": "multiple_choice",
+      "options": ["a", "an", "the", "no article"],
+      "correct_answer": "a",
+      "explanation": "Use 'a' before consonant sounds for singular countable nouns mentioned for the first time.",
+      "example": "She bought a car."
+    },
+    {
+      "subcategory_name": "Articles",
+      "level": "A2",
+      "question_text": "He is ____ honest person.",
+      "question_type": "multiple_choice",
+      "options": ["a", "an", "the", "no article"],
+      "correct_answer": "an",
+      "explanation": "Use 'an' before vowel sounds, including silent 'h' in 'honest'.",
+      "example": "She's an engineer."
+    },
+    {
+      "subcategory_name": "Articles",
+      "level": "B1",
+      "question_text": "____ Sun rises in the east.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "The",
+      "explanation": "Use 'the' with unique objects like celestial bodies.",
+      "example": "The Moon is bright tonight."
+    },
+    {
+      "subcategory_name": "Articles",
+      "level": "B2",
+      "question_text": "Is this statement true or false: 'We don't use articles with most proper nouns like names of people or cities.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Most proper nouns don't need articles: John, London, France (exceptions: the USA, the Alps).",
+      "example": "Mary lives in Paris."
+    },
+    {
+      "subcategory_name": "Modal Verbs",
+      "level": "A2",
+      "question_text": "You ____ stop at red lights.",
+      "question_type": "multiple_choice",
+      "options": ["can", "must", "might", "could"],
+      "correct_answer": "must",
+      "explanation": "'Must' expresses strong obligation or necessity.",
+      "example": "Students must wear uniforms."
+    },
+    {
+      "subcategory_name": "Modal Verbs",
+      "level": "B1",
+      "question_text": "She ____ be at home now. I saw her car in the driveway.",
+      "question_type": "multiple_choice",
+      "options": ["can", "must", "might", "should"],
+      "correct_answer": "must",
+      "explanation": "'Must' expresses logical deduction when we're almost certain.",
+      "example": "He must be tired after such a long day."
+    },
+    {
+      "subcategory_name": "Modal Verbs",
+      "level": "B1",
+      "question_text": "We ____ (not/have to) work tomorrow. It's a holiday.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "don't have to",
+      "explanation": "'Don't have to' means there's no obligation or necessity.",
+      "example": "You don't have to come if you're busy."
+    },
+    {
+      "subcategory_name": "Modal Verbs",
+      "level": "B2",
+      "question_text": "Is this statement true or false: 'Could' can express both past ability and polite requests.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "'Could' has multiple uses: past ability and polite requests/suggestions.",
+      "example": "I could swim when I was young. Could you help me?"
+    },
+    {
+      "subcategory_name": "Future Tenses",
+      "level": "A2",
+      "question_text": "Tomorrow I ____ visit my grandmother.",
+      "question_type": "multiple_choice",
+      "options": ["will", "am going", "go", "went"],
+      "correct_answer": "will",
+      "explanation": "'Will' expresses future intentions, predictions, and spontaneous decisions.",
+      "example": "It will rain tomorrow."
+    },
+    {
+      "subcategory_name": "Future Tenses",
+      "level": "B1",
+      "question_text": "We ____ (have) dinner at 7 PM tonight.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "are having",
+      "explanation": "Present Continuous can express planned future arrangements.",
+      "example": "I'm meeting John at 3 o'clock."
+    },
+    {
+      "subcategory_name": "Future Tenses",
+      "level": "B1",
+      "question_text": "Look at those clouds! It ____ rain soon.",
+      "question_type": "multiple_choice",
+      "options": ["will", "is going to", "goes to", "going"],
+      "correct_answer": "is going to",
+      "explanation": "'Going to' expresses predictions based on present evidence.",
+      "example": "She's going to be late - there's heavy traffic."
+    },
+    {
+      "subcategory_name": "Conditionals",
+      "level": "B1",
+      "question_text": "If it ____ tomorrow, we'll stay at home.",
+      "question_type": "multiple_choice",
+      "options": ["rain", "rains", "will rain", "rained"],
+      "correct_answer": "rains",
+      "explanation": "First conditional: If + Present Simple, will + base verb.",
+      "example": "If you study hard, you'll pass the exam."
+    },
+    {
+      "subcategory_name": "Conditionals",
+      "level": "B2",
+      "question_text": "If I ____ (be) rich, I would travel around the world.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "were",
+      "explanation": "Second conditional uses 'were' for all persons with 'be' in hypothetical situations.",
+      "example": "If she were here, she would help us."
+    },
+    {
+      "subcategory_name": "Conditionals",
+      "level": "B2",
+      "question_text": "Is this statement true or false: 'Third conditional expresses regrets about past situations.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Third conditional (If + past perfect, would have + past participle) expresses unreal past situations.",
+      "example": "If I had studied harder, I would have passed."
+    },
+    {
+      "subcategory_name": "Passive Voice",
+      "level": "B1",
+      "question_text": "The house ____ built in 1995.",
+      "question_type": "multiple_choice",
+      "options": ["is", "was", "has", "will"],
+      "correct_answer": "was",
+      "explanation": "Use 'was/were + past participle' for Past Simple passive.",
+      "example": "The letter was written yesterday."
+    },
+    {
+      "subcategory_name": "Passive Voice",
+      "level": "B2",
+      "question_text": "The problem ____ (solve) by the team next week.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "will be solved",
+      "explanation": "Future passive = will + be + past participle.",
+      "example": "The meeting will be held on Monday."
+    },
+    {
+      "subcategory_name": "Passive Voice",
+      "level": "B2",
+      "question_text": "Is this statement true or false: 'We use passive voice when the action is more important than who does it.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Passive voice emphasizes the action or result rather than the agent.",
+      "example": "The window was broken (we don't know or care who broke it)."
+    },
+    {
+      "subcategory_name": "Comparatives and Superlatives",
+      "level": "A2",
+      "question_text": "This book is ____ than that one.",
+      "question_type": "multiple_choice",
+      "options": ["interesting", "more interesting", "most interesting", "interestinger"],
+      "correct_answer": "more interesting",
+      "explanation": "Use 'more' + adjective for comparatives with long adjectives (3+ syllables).",
+      "example": "She is more beautiful than her sister."
+    },
+    {
+      "subcategory_name": "Comparatives and Superlatives",
+      "level": "A2",
+      "question_text": "Mount Everest is the ____ mountain in the world.",
+      "question_type": "multiple_choice",
+      "options": ["high", "higher", "highest", "most high"],
+      "correct_answer": "highest",
+      "explanation": "Use adjective + '-est' for superlatives with short adjectives.",
+      "example": "He is the tallest boy in the class."
+    },
+    {
+      "subcategory_name": "Comparatives and Superlatives",
+      "level": "B1",
+      "question_text": "The weather today is ____ (bad) than yesterday.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "worse",
+      "explanation": "'Bad' has irregular comparative and superlative forms: bad - worse - worst.",
+      "example": "This is the worst movie I've ever seen."
+    },
+    {
+      "subcategory_name": "Gerunds and Infinitives",
+      "level": "B1",
+      "question_text": "I enjoy ____ books in my free time.",
+      "question_type": "multiple_choice",
+      "options": ["read", "reading", "to read", "reads"],
+      "correct_answer": "reading",
+      "explanation": "'Enjoy' is followed by gerund (-ing form), not infinitive.",
+      "example": "She loves dancing."
+    },
+    {
+      "subcategory_name": "Gerunds and Infinitives",
+      "level": "B1",
+      "question_text": "He decided ____ (study) abroad.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "to study",
+      "explanation": "'Decide' is followed by infinitive (to + base verb).",
+      "example": "They planned to travel next month."
+    },
+    {
+      "subcategory_name": "Gerunds and Infinitives",
+      "level": "B2",
+      "question_text": "Is this statement true or false: 'Some verbs can be followed by both gerund and infinitive with different meanings.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Verbs like 'remember', 'forget', 'stop' change meaning with gerund vs infinitive.",
+      "example": "I remember meeting him (past action) vs I remembered to meet him (future action)."
+    },
+    {
+      "subcategory_name": "Prepositions",
+      "level": "A2",
+      "question_text": "The cat is ____ the table.",
+      "question_type": "multiple_choice",
+      "options": ["in", "on", "at", "by"],
+      "correct_answer": "on",
+      "explanation": "Use 'on' for surfaces and tops of things.",
+      "example": "The book is on the shelf."
+    },
+    {
+      "subcategory_name": "Prepositions",
+      "level": "B1",
+      "question_text": "She is good ____ mathematics.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "at",
+      "explanation": "'Good at' is the correct preposition combination for skills and abilities.",
+      "example": "He's bad at cooking."
+    },
+    {
+      "subcategory_name": "Prepositions",
+      "level": "B1",
+      "question_text": "We arrived ____ the airport at 6 AM.",
+      "question_type": "multiple_choice",
+      "options": ["in", "at", "on", "to"],
+      "correct_answer": "at",
+      "explanation": "Use 'at' with specific locations and buildings.",
+      "example": "I'll meet you at the station."
+    },
+    {
+      "subcategory_name": "Question Formation",
+      "level": "A1",
+      "question_text": "____ do you live?",
+      "question_type": "multiple_choice",
+      "options": ["What", "Where", "When", "Who"],
+      "correct_answer": "Where",
+      "explanation": "Use 'Where' to ask about location or place.",
+      "example": "Where is the library?"
+    },
+    {
+      "subcategory_name": "Question Formation",
+      "level": "A2",
+      "question_text": "____ books did you buy?",
+      "question_type": "multiple_choice",
+      "options": ["How much", "How many", "How long", "How often"],
+      "correct_answer": "How many",
+      "explanation": "Use 'How many' with countable nouns to ask about quantity.",
+      "example": "How many students are in your class?"
+    },
+    {
+      "subcategory_name": "Question Formation",
+      "level": "B1",
+      "question_text": "____ (long) have you been learning English?",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "How long",
+      "explanation": "'How long' asks about duration of time.",
+      "example": "How long did the meeting last?"
+    },
+    {
+      "subcategory_name": "Relative Clauses",
+      "level": "B1",
+      "question_text": "The man ____ lives next door is a doctor.",
+      "question_type": "multiple_choice",
+      "options": ["who", "which", "where", "when"],
+      "correct_answer": "who",
+      "explanation": "Use 'who' for people in relative clauses.",
+      "example": "The woman who called is my sister."
+    },
+    {
+      "subcategory_name": "Relative Clauses",
+      "level": "B2",
+      "question_text": "The house ____ (we/buy) last year needs renovation.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "which we bought",
+      "explanation": "Use 'which' for things in relative clauses. 'That' is also possible.",
+      "example": "The car that I drive is old."
+    },
+    {
+      "subcategory_name": "Relative Clauses",
+      "level": "B2",
+      "question_text": "Is this statement true or false: 'We can omit relative pronouns when they are the object of the relative clause.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Object relative pronouns can be omitted: 'The book (that) I read was good.'",
+      "example": "The person I met was friendly."
+    },
+    {
+      "subcategory_name": "Reported Speech",
+      "level": "B2",
+      "question_text": "She said she ____ tired.",
+      "question_type": "multiple_choice",
+      "options": ["is", "was", "will be", "has been"],
+      "correct_answer": "was",
+      "explanation": "In reported speech, present tense usually changes to past tense.",
+      "example": "He said he was hungry."
+    },
+    {
+      "subcategory_name": "Reported Speech",
+      "level": "B2",
+      "question_text": "Tom told me that he ____ (see) the movie the previous week.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "had seen",
+      "explanation": "Past Simple changes to Past Perfect in reported speech.",
+      "example": "She said she had finished her homework."
+    },
+    {
+      "subcategory_name": "Reported Speech",
+      "level": "C1",
+      "question_text": "Is this statement true or false: 'Time expressions change in reported speech: 'yesterday' becomes 'the day before'.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Time and place references shift in reported speech to match the reporting context.",
+      "example": "'I'll see you tomorrow' becomes 'He said he would see me the next day.'"
+    },
+    {
+      "subcategory_name": "Adjective Order",
+      "level": "B1",
+      "question_text": "She bought a ____ dress.",
+      "question_type": "multiple_choice",
+      "options": ["red beautiful silk", "beautiful red silk", "silk beautiful red", "red silk beautiful"],
+      "correct_answer": "beautiful red silk",
+      "explanation": "Adjective order: opinion - color - material.",
+      "example": "A lovely old wooden house."
+    },
+    {
+      "subcategory_name": "Quantifiers",
+      "level": "A2",
+      "question_text": "There are ____ people in the room.",
+      "question_type": "multiple_choice",
+      "options": ["much", "many", "a lot", "lots"],
+      "correct_answer": "many",
+      "explanation": "Use 'many' with countable nouns in questions and negatives.",
+      "example": "How many cars do you have?"
+    },
+    {
+      "subcategory_name": "Quantifiers",
+      "level": "B1",
+      "question_text": "I don't have ____ time today.",
+      "question_type": "multiple_choice",
+      "options": ["many", "much", "few", "little"],
+      "correct_answer": "much",
+      "explanation": "Use 'much' with uncountable nouns in negatives and questions.",
+      "example": "There isn't much water left."
+    },
+    {
+      "subcategory_name": "Quantifiers",
+      "level": "B1",
+      "question_text": "There are ____ (few) students this year than last year.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "fewer",
+      "explanation": "'Fewer' is the comparative form of 'few' for countable nouns.",
+      "example": "We have fewer problems now."
+    },
+    {
+        "subcategory_name": "Past Continuous",
+        "level": "A2",
+        "question_text": "While I ___ (cook) dinner, my brother was watching TV.",
+        "question_type": "fill_in_blank",
+        "options": null,
+        "correct_answer": "was cooking",
+        "explanation": "Past Continuous is used for actions in progress at a specific time in the past.",
+        "example": "She was studying when I called."
+      },
+      {
+        "subcategory_name": "Past Continuous",
+        "level": "B1",
+        "question_text": "Which sentence is correct?",
+        "question_type": "multiple_choice",
+        "options": [
+          "They was playing chess at 5 PM.",
+          "They were playing chess at 5 PM.",
+          "They are playing chess at 5 PM."
+        ],
+        "correct_answer": "They were playing chess at 5 PM.",
+        "explanation": "'Were' is used with 'they' in Past Continuous.",
+        "example": "We were talking when the teacher arrived."
+      },
+      {
+        "subcategory_name": "Articles",
+        "level": "A2",
+        "question_text": "I saw ___ owl in the tree last night.",
+        "question_type": "fill_in_blank",
+        "options": ["a", "an", "the"],
+        "correct_answer": "an",
+        "explanation": "Use 'an' before words with a vowel sound (like 'owl').",
+        "example": "An hour, an umbrella."
+      },
+      {
+        "subcategory_name": "Articles",
+        "level": "B1",
+        "question_text": "Is this true? 'We use 'the' with things mentioned for the second time.'",
+        "question_type": "true_false",
+        "options": ["True", "False"],
+        "correct_answer": "True",
+        "explanation": "'The' is definite and refers to specific nouns.",
+        "example": "I saw a cat. The cat was black."
+      },
+      {
+        "subcategory_name": "Present Perfect",
+        "level": "A2",
+        "question_text": "She ___ (finish) her homework already.",
+        "question_type": "fill_in_blank",
+        "options": null,
+        "correct_answer": "has finished",
+        "explanation": "Present Perfect is used for completed actions with present relevance.",
+        "example": "They have visited Paris twice."
+      },
+      {
+        "subcategory_name": "Present Perfect",
+        "level": "B1",
+        "question_text": "Which sentence uses Present Perfect correctly?",
+        "question_type": "multiple_choice",
+        "options": [
+          "I have seen that movie yesterday.",
+          "I have seen that movie.",
+          "I saw that movie last week."
+        ],
+        "correct_answer": "I have seen that movie.",
+        "explanation": "Present Perfect doesn't use specific past time expressions.",
+        "example": "He has never been to Japan."
+      },
+      {
+        "subcategory_name": "Comparatives",
+        "level": "A2",
+        "question_text": "This book is ___ (interesting) than that one.",
+        "question_type": "fill_in_blank",
+        "options": null,
+        "correct_answer": "more interesting",
+        "explanation": "Long adjectives use 'more' in comparatives.",
+        "example": "She is more intelligent than her brother."
+      },
+      {
+        "subcategory_name": "Comparatives",
+        "level": "B1",
+        "question_text": "Is this correct? 'This is the most tallest building in the city.'",
+        "question_type": "true_false",
+        "options": ["True", "False"],
+        "correct_answer": "False",
+        "explanation": "'Tallest' is already superlative; 'most' is redundant.",
+        "example": "Correct: This is the tallest building."
+      },
+      {
+        "subcategory_name": "Past Simple",
+        "level": "A2",
+        "question_text": "They ___ (go) to Spain last summer.",
+        "question_type": "fill_in_blank",
+        "options": null,
+        "correct_answer": "went",
+        "explanation": "Past Simple is used for completed actions in the past.",
+        "example": "She ate pizza for dinner."
+      },
+      {
+        "subcategory_name": "Past Simple",
+        "level": "B1",
+        "question_text": "Which is the correct Past Simple form of 'take'?",
+        "question_type": "multiple_choice",
+        "options": ["taked", "took", "taken"],
+        "correct_answer": "took",
+        "explanation": "Irregular verbs have unique Past Simple forms.",
+        "example": "I took a photo of the sunset."
+      },
+      {
+        "subcategory_name": "Future Simple",
+        "level": "A2",
+        "question_text": "___ you ___ (call) me tomorrow?",
+        "question_type": "fill_in_blank",
+        "options": null,
+        "correct_answer": "Will, call",
+        "explanation": "Future Simple uses 'will' + base verb for predictions or promises.",
+        "example": "She will arrive at 8 PM."
+      },
+      {
+        "subcategory_name": "Future Simple",
+        "level": "B1",
+        "question_text": "Is this correct? 'I think it will rains tomorrow.'",
+        "question_type": "true_false",
+        "options": ["True", "False"],
+        "correct_answer": "False",
+        "explanation": "After 'will', use the base form of the verb (rain).",
+        "example": "Correct: It will rain tomorrow."
+      },
+      {
+        "subcategory_name": "Present Continuous",
+        "level": "A2",
+        "question_text": "Look! The dog ___ (run) in the garden.",
+        "question_type": "fill_in_blank",
+        "options": null,
+        "correct_answer": "is running",
+        "explanation": "Present Continuous describes actions happening now.",
+        "example": "They are watching TV."
+      },
+      {
+        "subcategory_name": "Present Continuous",
+        "level": "B1",
+        "question_text": "Which sentence is correct?",
+        "question_type": "multiple_choice",
+        "options": [
+          "She is not understanding the question.",
+          "She doesn’t understand the question.",
+          "Both are correct."
+        ],
+        "correct_answer": "She doesn’t understand the question.",
+        "explanation": "Some verbs (like 'understand') are rarely used in continuous tenses.",
+        "example": "I know the answer (not 'I am knowing')."
+      },
+      {
+        "subcategory_name": "Modal Verbs",
+        "level": "A2",
+        "question_text": "You ___ stop when the traffic light is red.",
+        "question_type": "fill_in_blank",
+        "options": ["can", "must", "might"],
+        "correct_answer": "must",
+        "explanation": "'Must' expresses obligation or necessity.",
+        "example": "You must wear a seatbelt."
+      },
+      {
+        "subcategory_name": "Modal Verbs",
+        "level": "B1",
+        "question_text": "Is this correct? 'She can to swim very well.'",
+        "question_type": "true_false",
+        "options": ["True", "False"],
+        "correct_answer": "False",
+        "explanation": "After modal verbs (can, must, etc.), use the base form of the verb.",
+        "example": "Correct: She can swim very well."
+      },
+      {
+        "subcategory_name": "Prepositions",
+        "level": "A2",
+        "question_text": "I’m good ___ playing chess.",
+        "question_type": "fill_in_blank",
+        "options": ["at", "in", "on"],
+        "correct_answer": "at",
+        "explanation": "'Good at' is a fixed prepositional phrase.",
+        "example": "He is bad at singing."
+      },
+      {
+        "subcategory_name": "Prepositions",
+        "level": "B1",
+        "question_text": "Which sentence is correct?",
+        "question_type": "multiple_choice",
+        "options": [
+          "We arrived to the airport.",
+          "We arrived at the airport.",
+          "We arrived in the airport."
+        ],
+        "correct_answer": "We arrived at the airport.",
+        "explanation": "'Arrive' is followed by 'at' for specific places.",
+        "example": "They arrived at the hotel."
+      },
+      {
+        "subcategory_name": "Conditionals",
+        "level": "A2",
+        "question_text": "If it ___ (rain), we will stay at home.",
+        "question_type": "fill_in_blank",
+        "options": null,
+        "correct_answer": "rains",
+        "explanation": "First Conditional uses 'if + Present Simple, ... will + base verb'.",
+        "example": "If you study, you will pass the exam."
+      },
+      {
+        "subcategory_name": "Conditionals",
+        "level": "B1",
+        "question_text": "Is this correct? 'If I would have time, I would help you.'",
+        "question_type": "true_false",
+        "options": ["True", "False"],
+        "correct_answer": "False",
+        "explanation": "Second Conditional structure: 'If + Past Simple, ... would + base verb'.",
+        "example": "Correct: If I had time, I would help you."
+      },
+      {
+    "subcategory_name": "Past Simple",
+    "level": "B2",
+    "question_text": "He  (realize) his mistake after reading the report.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "realized",
+    "explanation": "Use regular verb in Past Simple.",
+    "example": "She walked home yesterday."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "More and more people  (turn) to electric cars nowadays.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "are turning",
+    "explanation": "Use Present Continuous for current trends.",
+    "example": "People are using smartphones more often."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "She has  unique ability to solve problems.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' starts with a consonant sound, so we use 'a'.",
+    "example": "A university, a unique idea."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "He is  honest man who never lies.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "Use 'an' before silent 'h' words like 'honest'.",
+    "example": "An hour, an honest person."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "B2",
+    "question_text": "Why  you  the offer?",
+    "question_type": "multiple_choice",
+    "options": [
+      "did",
+      "reject",
+      "rejected",
+      "rejecting"
+    ],
+    "correct_answer": "reject",
+    "explanation": "After 'did' we use the base form of the verb.",
+    "example": "Did you call her?"
+  },
+  {
+    "subcategory_name": "Past Continuous",
+    "level": "B2",
+    "question_text": "They  (not listen) when the teacher entered.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "weren't listening",
+    "explanation": "Use 'weren't' for they/we/you in Past Continuous negative.",
+    "example": "They weren't paying attention."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "C1",
+    "question_text": "He  (realize) his mistake after reading the report.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "realized",
+    "explanation": "Use regular verb in Past Simple.",
+    "example": "She walked home yesterday."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "I  (not try) to avoid you.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "am not trying",
+    "explanation": "Use 'am not' + verb-ing for 'I' in Present Continuous negative.",
+    "example": "I am not ignoring you."
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "C1",
+    "question_text": "Water  at 100 degrees Celsius.",
+    "question_type": "multiple_choice",
+    "options": [
+      "boil",
+      "boils",
+      "boiling",
+      "boiled"
+    ],
+    "correct_answer": "boils",
+    "explanation": "Scientific facts are expressed in Present Simple.",
+    "example": "Water boils at 100°C."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "I  (not try) to avoid you.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "am not trying",
+    "explanation": "Use 'am not' + verb-ing for 'I' in Present Continuous negative.",
+    "example": "I am not ignoring you."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "More and more people  (turn) to electric cars nowadays.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "are turning",
+    "explanation": "Use Present Continuous for current trends.",
+    "example": "People are using smartphones more often."
+  },
+  {
+    "subcategory_name": "Countable and Uncountable Nouns",
+    "level": "B2",
+    "question_text": "He gave me some  on how to improve my writing.",
+    "question_type": "multiple_choice",
+    "options": [
+      "advices",
+      "advice",
+      "advise",
+      "advises"
+    ],
+    "correct_answer": "advice",
+    "explanation": "'Advice' is uncountable; never takes -s.",
+    "example": "She gave me good advice."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "I  (not try) to avoid you.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "am not trying",
+    "explanation": "Use 'am not' + verb-ing for 'I' in Present Continuous negative.",
+    "example": "I am not ignoring you."
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "B2",
+    "question_text": "The Earth  around the Sun.",
+    "question_type": "multiple_choice",
+    "options": [
+      "revolve",
+      "revolves",
+      "revolving",
+      "revolved"
+    ],
+    "correct_answer": "revolves",
+    "explanation": "Use Present Simple for universal truths with 'he/she/it'.",
+    "example": "The sun rises in the east."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "B2",
+    "question_text": "Why  you  the offer?",
+    "question_type": "multiple_choice",
+    "options": [
+      "did",
+      "reject",
+      "rejected",
+      "rejecting"
+    ],
+    "correct_answer": "reject",
+    "explanation": "After 'did' we use the base form of the verb.",
+    "example": "Did you call her?"
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He is  honest man who never lies.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "Use 'an' before silent 'h' words like 'honest'.",
+    "example": "An hour, an honest person."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "C1",
+    "question_text": "He  (realize) his mistake after reading the report.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "realized",
+    "explanation": "Use regular verb in Past Simple.",
+    "example": "She walked home yesterday."
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "C1",
+    "question_text": "The Earth  around the Sun.",
+    "question_type": "multiple_choice",
+    "options": [
+      "revolve",
+      "revolves",
+      "revolving",
+      "revolved"
+    ],
+    "correct_answer": "revolves",
+    "explanation": "Use Present Simple for universal truths with 'he/she/it'.",
+    "example": "The sun rises in the east."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He is  honest man who never lies.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "Use 'an' before silent 'h' words like 'honest'.",
+    "example": "An hour, an honest person."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "I  (not try) to avoid you.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "am not trying",
+    "explanation": "Use 'am not' + verb-ing for 'I' in Present Continuous negative.",
+    "example": "I am not ignoring you."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "I  (not try) to avoid you.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "am not trying",
+    "explanation": "Use 'am not' + verb-ing for 'I' in Present Continuous negative.",
+    "example": "I am not ignoring you."
+  },
+  {
+    "subcategory_name": "Countable and Uncountable Nouns",
+    "level": "B2",
+    "question_text": "He gave me some  on how to improve my writing.",
+    "question_type": "multiple_choice",
+    "options": [
+      "advices",
+      "advice",
+      "advise",
+      "advises"
+    ],
+    "correct_answer": "advice",
+    "explanation": "'Advice' is uncountable; never takes -s.",
+    "example": "She gave me good advice."
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "C1",
+    "question_text": "Water  at 100 degrees Celsius.",
+    "question_type": "multiple_choice",
+    "options": [
+      "boil",
+      "boils",
+      "boiling",
+      "boiled"
+    ],
+    "correct_answer": "boils",
+    "explanation": "Scientific facts are expressed in Present Simple.",
+    "example": "Water boils at 100°C."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "More and more people  (turn) to electric cars nowadays.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "are turning",
+    "explanation": "Use Present Continuous for current trends.",
+    "example": "People are using smartphones more often."
+  },
+  {
+    "subcategory_name": "Countable and Uncountable Nouns",
+    "level": "B2",
+    "question_text": "He gave me some  on how to improve my writing.",
+    "question_type": "multiple_choice",
+    "options": [
+      "advices",
+      "advice",
+      "advise",
+      "advises"
+    ],
+    "correct_answer": "advice",
+    "explanation": "'Advice' is uncountable; never takes -s.",
+    "example": "She gave me good advice."
+  },
+  {
+    "subcategory_name": "Past Continuous",
+    "level": "C1",
+    "question_text": "They  (not listen) when the teacher entered.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "weren't listening",
+    "explanation": "Use 'weren't' for they/we/you in Past Continuous negative.",
+    "example": "They weren't paying attention."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "B2",
+    "question_text": "He  (realize) his mistake after reading the report.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "realized",
+    "explanation": "Use regular verb in Past Simple.",
+    "example": "She walked home yesterday."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "B2",
+    "question_text": "More and more people  (turn) to electric cars nowadays.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "are turning",
+    "explanation": "Use Present Continuous for current trends.",
+    "example": "People are using smartphones more often."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "She has  unique ability to solve problems.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' starts with a consonant sound, so we use 'a'.",
+    "example": "A university, a unique idea."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "B2",
+    "question_text": "He  (realize) his mistake after reading the report.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "realized",
+    "explanation": "Use regular verb in Past Simple.",
+    "example": "She walked home yesterday."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "She has  unique ability to solve problems.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' starts with a consonant sound, so we use 'a'.",
+    "example": "A university, a unique idea."
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "B2",
+    "question_text": "The Earth  around the Sun.",
+    "question_type": "multiple_choice",
+    "options": [
+      "revolve",
+      "revolves",
+      "revolving",
+      "revolved"
+    ],
+    "correct_answer": "revolves",
+    "explanation": "Use Present Simple for universal truths with 'he/she/it'.",
+    "example": "The sun rises in the east."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "C1",
+    "question_text": "He  (realize) his mistake after reading the report.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "realized",
+    "explanation": "Use regular verb in Past Simple.",
+    "example": "She walked home yesterday."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "He is  honest man who never lies.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "Use 'an' before silent 'h' words like 'honest'.",
+    "example": "An hour, an honest person."
+  },
+  {
+    "subcategory_name": "Countable and Uncountable Nouns",
+    "level": "B2",
+    "question_text": "There isn’t  information available on this topic.",
+    "question_type": "multiple_choice",
+    "options": [
+      "many",
+      "much",
+      "a few",
+      "several"
+    ],
+    "correct_answer": "much",
+    "explanation": "'Much' is used with uncountable nouns.",
+    "example": "There isn't much sugar left."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "I  (not try) to avoid you.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "am not trying",
+    "explanation": "Use 'am not' + verb-ing for 'I' in Present Continuous negative.",
+    "example": "I am not ignoring you."
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "C1",
+    "question_text": "Water  at 100 degrees Celsius.",
+    "question_type": "multiple_choice",
+    "options": [
+      "boil",
+      "boils",
+      "boiling",
+      "boiled"
+    ],
+    "correct_answer": "boils",
+    "explanation": "Scientific facts are expressed in Present Simple.",
+    "example": "Water boils at 100°C."
+  },
+  {
+    "subcategory_name": "Prepositions",
+    "level": "C1",
+    "question_text": "He divided the cake  six equal parts.",
+    "question_type": "multiple_choice",
+    "options": [
+      "in",
+      "into",
+      "on",
+      "at"
+    ],
+    "correct_answer": "into",
+    "explanation": "'Into' is used to show division.",
+    "example": "Cut the apple into slices."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "She has  unique ability to solve problems.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' starts with a consonant sound, so we use 'a'.",
+    "example": "A university, a unique idea."
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "C1",
+    "question_text": "The Earth  around the Sun.",
+    "question_type": "multiple_choice",
+    "options": [
+      "revolve",
+      "revolves",
+      "revolving",
+      "revolved"
+    ],
+    "correct_answer": "revolves",
+    "explanation": "Use Present Simple for universal truths with 'he/she/it'.",
+    "example": "The sun rises in the east."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "B2",
+    "question_text": "He  (realize) his mistake after reading the report.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "realized",
+    "explanation": "Use regular verb in Past Simple.",
+    "example": "She walked home yesterday."
+  },
+  {
+    "subcategory_name": "Past Continuous",
+    "level": "B2",
+    "question_text": "While I  (walk) home, it started to snow.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "was walking",
+    "explanation": "Past Continuous is used for an action in progress in the past.",
+    "example": "I was walking when I slipped."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "She has  unique ability to solve problems.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' starts with a consonant sound, so we use 'a'.",
+    "example": "A university, a unique idea."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "C1",
+    "question_text": "Why  you  the offer?",
+    "question_type": "multiple_choice",
+    "options": [
+      "did",
+      "reject",
+      "rejected",
+      "rejecting"
+    ],
+    "correct_answer": "reject",
+    "explanation": "After 'did' we use the base form of the verb.",
+    "example": "Did you call her?"
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "B2",
+    "question_text": "Water  at 100 degrees Celsius.",
+    "question_type": "multiple_choice",
+    "options": [
+      "boil",
+      "boils",
+      "boiling",
+      "boiled"
+    ],
+    "correct_answer": "boils",
+    "explanation": "Scientific facts are expressed in Present Simple.",
+    "example": "Water boils at 100°C."
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "C1",
+    "question_text": "Water  at 100 degrees Celsius.",
+    "question_type": "multiple_choice",
+    "options": [
+      "boil",
+      "boils",
+      "boiling",
+      "boiled"
+    ],
+    "correct_answer": "boils",
+    "explanation": "Scientific facts are expressed in Present Simple.",
+    "example": "Water boils at 100°C."
+  },
+  {
+    "subcategory_name": "Past Continuous",
+    "level": "B2",
+    "question_text": "They  (not listen) when the teacher entered.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "weren't listening",
+    "explanation": "Use 'weren't' for they/we/you in Past Continuous negative.",
+    "example": "They weren't paying attention."
+  },
+  {
+    "subcategory_name": "Prepositions",
+    "level": "C1",
+    "question_text": "The report must be submitted  Friday at the latest.",
+    "question_type": "multiple_choice",
+    "options": [
+      "by",
+      "on",
+      "in",
+      "at"
+    ],
+    "correct_answer": "by",
+    "explanation": "'By' is used to indicate a deadline.",
+    "example": "Please finish the work by Monday."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "B2",
+    "question_text": "Why  you  the offer?",
+    "question_type": "multiple_choice",
+    "options": [
+      "did",
+      "reject",
+      "rejected",
+      "rejecting"
+    ],
+    "correct_answer": "reject",
+    "explanation": "After 'did' we use the base form of the verb.",
+    "example": "Did you call her?"
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "B2",
+    "question_text": "Water  at 100 degrees Celsius.",
+    "question_type": "multiple_choice",
+    "options": [
+      "boil",
+      "boils",
+      "boiling",
+      "boiled"
+    ],
+    "correct_answer": "boils",
+    "explanation": "Scientific facts are expressed in Present Simple.",
+    "example": "Water boils at 100°C."
+  }
+
+
+  ]

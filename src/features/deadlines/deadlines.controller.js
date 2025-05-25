@@ -202,4 +202,9 @@ class Deadlines {
     }
 }
 
-module.exports = Deadlines; 
+function register(bot) {
+    const deadlines = new Deadlines(bot);
+    deadlines.setupHandlers();
+}
+
+module.exports = { register }; 
