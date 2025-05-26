@@ -1,0 +1,5082 @@
+[
+    {
+      "subcategory_name": "Present Simple",
+      "level": "A1",
+      "question_text": "She ____ to school every day.",
+      "question_type": "multiple_choice",
+      "options": ["go", "goes", "going", "went"],
+      "correct_answer": "goes",
+      "explanation": "Use 'goes' with third person singular in Present Simple.",
+      "example": "He goes to work by bus."
+    },
+    {
+      "subcategory_name": "Present Simple",
+      "level": "A1",
+      "question_text": "They ____ (not/like) pizza.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "don't like",
+      "explanation": "Use 'don't' with plural subjects in negative Present Simple.",
+      "example": "We don't eat meat."
+    },
+    {
+      "subcategory_name": "Present Simple",
+      "level": "A2",
+      "question_text": "Is this statement true or false: 'Present Simple is used for habits and routines.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Present Simple describes regular actions, habits, and general truths.",
+      "example": "I drink coffee every morning."
+    },
+    {
+      "subcategory_name": "Present Continuous",
+      "level": "A2",
+      "question_text": "What ____ you doing right now?",
+      "question_type": "multiple_choice",
+      "options": ["is", "are", "am", "be"],
+      "correct_answer": "are",
+      "explanation": "Use 'are' with 'you' in Present Continuous questions.",
+      "example": "What are you reading?"
+    },
+    {
+      "subcategory_name": "Present Continuous",
+      "level": "A2",
+      "question_text": "The children ____ (play) in the garden now.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "are playing",
+      "explanation": "Present Continuous = be + verb-ing for actions happening now.",
+      "example": "She is cooking dinner."
+    },
+    {
+      "subcategory_name": "Present Continuous",
+      "level": "B1",
+      "question_text": "Is this statement true or false: 'We can't use Present Continuous with stative verbs like 'know' or 'love'.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Stative verbs describe states, not actions, so they rarely use continuous forms.",
+      "example": "I know the answer (not 'I am knowing')."
+    },
+    {
+      "subcategory_name": "Past Simple",
+      "level": "A2",
+      "question_text": "Yesterday, I ____ to the cinema.",
+      "question_type": "multiple_choice",
+      "options": ["go", "went", "going", "gone"],
+      "correct_answer": "went",
+      "explanation": "'Went' is the past form of 'go' for completed past actions.",
+      "example": "We went shopping last weekend."
+    },
+    {
+      "subcategory_name": "Past Simple",
+      "level": "A2",
+      "question_text": "She ____ (not/finish) her homework yesterday.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "didn't finish",
+      "explanation": "Use 'didn't' + base verb for negative Past Simple.",
+      "example": "They didn't come to the party."
+    },
+    {
+      "subcategory_name": "Past Continuous",
+      "level": "B1",
+      "question_text": "While I ____ TV, my brother was studying.",
+      "question_type": "multiple_choice",
+      "options": ["watched", "was watching", "watch", "am watching"],
+      "correct_answer": "was watching",
+      "explanation": "Past Continuous shows an ongoing action in the past, often interrupted or simultaneous with another action.",
+      "example": "It was raining when we left."
+    },
+    {
+      "subcategory_name": "Past Continuous",
+      "level": "B1",
+      "question_text": "They ____ (walk) in the park when it started to snow.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "were walking",
+      "explanation": "Past Continuous = was/were + verb-ing for ongoing past actions.",
+      "example": "I was sleeping at midnight."
+    },
+    {
+      "subcategory_name": "Present Perfect",
+      "level": "B1",
+      "question_text": "I ____ never been to Japan.",
+      "question_type": "multiple_choice",
+      "options": ["has", "have", "had", "am"],
+      "correct_answer": "have",
+      "explanation": "Use 'have' with 'I' in Present Perfect for life experiences.",
+      "example": "We have lived here for five years."
+    },
+    {
+      "subcategory_name": "Present Perfect",
+      "level": "B1",
+      "question_text": "She ____ (just/arrive) at the airport.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "has just arrived",
+      "explanation": "Present Perfect = have/has + past participle for recent completed actions.",
+      "example": "He has already eaten lunch."
+    },
+    {
+      "subcategory_name": "Present Perfect",
+      "level": "B2",
+      "question_text": "Is this statement true or false: 'Present Perfect connects the past with the present.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Present Perfect shows past actions with present relevance or continuing effects.",
+      "example": "I have lost my keys (and still don't have them)."
+    },
+    {
+      "subcategory_name": "Articles",
+      "level": "A2",
+      "question_text": "I need ____ pencil to write.",
+      "question_type": "multiple_choice",
+      "options": ["a", "an", "the", "no article"],
+      "correct_answer": "a",
+      "explanation": "Use 'a' before consonant sounds for singular countable nouns mentioned for the first time.",
+      "example": "She bought a car."
+    },
+    {
+      "subcategory_name": "Articles",
+      "level": "A2",
+      "question_text": "He is ____ honest person.",
+      "question_type": "multiple_choice",
+      "options": ["a", "an", "the", "no article"],
+      "correct_answer": "an",
+      "explanation": "Use 'an' before vowel sounds, including silent 'h' in 'honest'.",
+      "example": "She's an engineer."
+    },
+    {
+      "subcategory_name": "Articles",
+      "level": "B1",
+      "question_text": "____ Sun rises in the east.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "The",
+      "explanation": "Use 'the' with unique objects like celestial bodies.",
+      "example": "The Moon is bright tonight."
+    },
+    {
+      "subcategory_name": "Articles",
+      "level": "B2",
+      "question_text": "Is this statement true or false: 'We don't use articles with most proper nouns like names of people or cities.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Most proper nouns don't need articles: John, London, France (exceptions: the USA, the Alps).",
+      "example": "Mary lives in Paris."
+    },
+    {
+      "subcategory_name": "Modal Verbs",
+      "level": "A2",
+      "question_text": "You ____ stop at red lights.",
+      "question_type": "multiple_choice",
+      "options": ["can", "must", "might", "could"],
+      "correct_answer": "must",
+      "explanation": "'Must' expresses strong obligation or necessity.",
+      "example": "Students must wear uniforms."
+    },
+    {
+      "subcategory_name": "Modal Verbs",
+      "level": "B1",
+      "question_text": "She ____ be at home now. I saw her car in the driveway.",
+      "question_type": "multiple_choice",
+      "options": ["can", "must", "might", "should"],
+      "correct_answer": "must",
+      "explanation": "'Must' expresses logical deduction when we're almost certain.",
+      "example": "He must be tired after such a long day."
+    },
+    {
+      "subcategory_name": "Modal Verbs",
+      "level": "B1",
+      "question_text": "We ____ (not/have to) work tomorrow. It's a holiday.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "don't have to",
+      "explanation": "'Don't have to' means there's no obligation or necessity.",
+      "example": "You don't have to come if you're busy."
+    },
+    {
+      "subcategory_name": "Modal Verbs",
+      "level": "B2",
+      "question_text": "Is this statement true or false: 'Could' can express both past ability and polite requests.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "'Could' has multiple uses: past ability and polite requests/suggestions.",
+      "example": "I could swim when I was young. Could you help me?"
+    },
+    {
+      "subcategory_name": "Future Tenses",
+      "level": "A2",
+      "question_text": "Tomorrow I ____ visit my grandmother.",
+      "question_type": "multiple_choice",
+      "options": ["will", "am going", "go", "went"],
+      "correct_answer": "will",
+      "explanation": "'Will' expresses future intentions, predictions, and spontaneous decisions.",
+      "example": "It will rain tomorrow."
+    },
+    {
+      "subcategory_name": "Future Tenses",
+      "level": "B1",
+      "question_text": "We ____ (have) dinner at 7 PM tonight.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "are having",
+      "explanation": "Present Continuous can express planned future arrangements.",
+      "example": "I'm meeting John at 3 o'clock."
+    },
+    {
+      "subcategory_name": "Future Tenses",
+      "level": "B1",
+      "question_text": "Look at those clouds! It ____ rain soon.",
+      "question_type": "multiple_choice",
+      "options": ["will", "is going to", "goes to", "going"],
+      "correct_answer": "is going to",
+      "explanation": "'Going to' expresses predictions based on present evidence.",
+      "example": "She's going to be late - there's heavy traffic."
+    },
+    {
+      "subcategory_name": "Conditionals",
+      "level": "B1",
+      "question_text": "If it ____ tomorrow, we'll stay at home.",
+      "question_type": "multiple_choice",
+      "options": ["rain", "rains", "will rain", "rained"],
+      "correct_answer": "rains",
+      "explanation": "First conditional: If + Present Simple, will + base verb.",
+      "example": "If you study hard, you'll pass the exam."
+    },
+    {
+      "subcategory_name": "Conditionals",
+      "level": "B2",
+      "question_text": "If I ____ (be) rich, I would travel around the world.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "were",
+      "explanation": "Second conditional uses 'were' for all persons with 'be' in hypothetical situations.",
+      "example": "If she were here, she would help us."
+    },
+    {
+      "subcategory_name": "Conditionals",
+      "level": "B2",
+      "question_text": "Is this statement true or false: 'Third conditional expresses regrets about past situations.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Third conditional (If + past perfect, would have + past participle) expresses unreal past situations.",
+      "example": "If I had studied harder, I would have passed."
+    },
+    {
+      "subcategory_name": "Passive Voice",
+      "level": "B1",
+      "question_text": "The house ____ built in 1995.",
+      "question_type": "multiple_choice",
+      "options": ["is", "was", "has", "will"],
+      "correct_answer": "was",
+      "explanation": "Use 'was/were + past participle' for Past Simple passive.",
+      "example": "The letter was written yesterday."
+    },
+    {
+      "subcategory_name": "Passive Voice",
+      "level": "B2",
+      "question_text": "The problem ____ (solve) by the team next week.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "will be solved",
+      "explanation": "Future passive = will + be + past participle.",
+      "example": "The meeting will be held on Monday."
+    },
+    {
+      "subcategory_name": "Passive Voice",
+      "level": "B2",
+      "question_text": "Is this statement true or false: 'We use passive voice when the action is more important than who does it.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Passive voice emphasizes the action or result rather than the agent.",
+      "example": "The window was broken (we don't know or care who broke it)."
+    },
+    {
+      "subcategory_name": "Comparatives and Superlatives",
+      "level": "A2",
+      "question_text": "This book is ____ than that one.",
+      "question_type": "multiple_choice",
+      "options": ["interesting", "more interesting", "most interesting", "interestinger"],
+      "correct_answer": "more interesting",
+      "explanation": "Use 'more' + adjective for comparatives with long adjectives (3+ syllables).",
+      "example": "She is more beautiful than her sister."
+    },
+    {
+      "subcategory_name": "Comparatives and Superlatives",
+      "level": "A2",
+      "question_text": "Mount Everest is the ____ mountain in the world.",
+      "question_type": "multiple_choice",
+      "options": ["high", "higher", "highest", "most high"],
+      "correct_answer": "highest",
+      "explanation": "Use adjective + '-est' for superlatives with short adjectives.",
+      "example": "He is the tallest boy in the class."
+    },
+    {
+      "subcategory_name": "Comparatives and Superlatives",
+      "level": "B1",
+      "question_text": "The weather today is ____ (bad) than yesterday.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "worse",
+      "explanation": "'Bad' has irregular comparative and superlative forms: bad - worse - worst.",
+      "example": "This is the worst movie I've ever seen."
+    },
+    {
+      "subcategory_name": "Gerunds and Infinitives",
+      "level": "B1",
+      "question_text": "I enjoy ____ books in my free time.",
+      "question_type": "multiple_choice",
+      "options": ["read", "reading", "to read", "reads"],
+      "correct_answer": "reading",
+      "explanation": "'Enjoy' is followed by gerund (-ing form), not infinitive.",
+      "example": "She loves dancing."
+    },
+    {
+      "subcategory_name": "Gerunds and Infinitives",
+      "level": "B1",
+      "question_text": "He decided ____ (study) abroad.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "to study",
+      "explanation": "'Decide' is followed by infinitive (to + base verb).",
+      "example": "They planned to travel next month."
+    },
+    {
+      "subcategory_name": "Gerunds and Infinitives",
+      "level": "B2",
+      "question_text": "Is this statement true or false: 'Some verbs can be followed by both gerund and infinitive with different meanings.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Verbs like 'remember', 'forget', 'stop' change meaning with gerund vs infinitive.",
+      "example": "I remember meeting him (past action) vs I remembered to meet him (future action)."
+    },
+    {
+      "subcategory_name": "Prepositions",
+      "level": "A2",
+      "question_text": "The cat is ____ the table.",
+      "question_type": "multiple_choice",
+      "options": ["in", "on", "at", "by"],
+      "correct_answer": "on",
+      "explanation": "Use 'on' for surfaces and tops of things.",
+      "example": "The book is on the shelf."
+    },
+    {
+      "subcategory_name": "Prepositions",
+      "level": "B1",
+      "question_text": "She is good ____ mathematics.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "at",
+      "explanation": "'Good at' is the correct preposition combination for skills and abilities.",
+      "example": "He's bad at cooking."
+    },
+    {
+      "subcategory_name": "Prepositions",
+      "level": "B1",
+      "question_text": "We arrived ____ the airport at 6 AM.",
+      "question_type": "multiple_choice",
+      "options": ["in", "at", "on", "to"],
+      "correct_answer": "at",
+      "explanation": "Use 'at' with specific locations and buildings.",
+      "example": "I'll meet you at the station."
+    },
+    {
+      "subcategory_name": "Question Formation",
+      "level": "A1",
+      "question_text": "____ do you live?",
+      "question_type": "multiple_choice",
+      "options": ["What", "Where", "When", "Who"],
+      "correct_answer": "Where",
+      "explanation": "Use 'Where' to ask about location or place.",
+      "example": "Where is the library?"
+    },
+    {
+      "subcategory_name": "Question Formation",
+      "level": "A2",
+      "question_text": "____ books did you buy?",
+      "question_type": "multiple_choice",
+      "options": ["How much", "How many", "How long", "How often"],
+      "correct_answer": "How many",
+      "explanation": "Use 'How many' with countable nouns to ask about quantity.",
+      "example": "How many students are in your class?"
+    },
+    {
+      "subcategory_name": "Question Formation",
+      "level": "B1",
+      "question_text": "____ (long) have you been learning English?",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "How long",
+      "explanation": "'How long' asks about duration of time.",
+      "example": "How long did the meeting last?"
+    },
+    {
+      "subcategory_name": "Relative Clauses",
+      "level": "B1",
+      "question_text": "The man ____ lives next door is a doctor.",
+      "question_type": "multiple_choice",
+      "options": ["who", "which", "where", "when"],
+      "correct_answer": "who",
+      "explanation": "Use 'who' for people in relative clauses.",
+      "example": "The woman who called is my sister."
+    },
+    {
+      "subcategory_name": "Relative Clauses",
+      "level": "B2",
+      "question_text": "The house ____ (we/buy) last year needs renovation.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "which we bought",
+      "explanation": "Use 'which' for things in relative clauses. 'That' is also possible.",
+      "example": "The car that I drive is old."
+    },
+    {
+      "subcategory_name": "Relative Clauses",
+      "level": "B2",
+      "question_text": "Is this statement true or false: 'We can omit relative pronouns when they are the object of the relative clause.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Object relative pronouns can be omitted: 'The book (that) I read was good.'",
+      "example": "The person I met was friendly."
+    },
+    {
+      "subcategory_name": "Reported Speech",
+      "level": "B2",
+      "question_text": "She said she ____ tired.",
+      "question_type": "multiple_choice",
+      "options": ["is", "was", "will be", "has been"],
+      "correct_answer": "was",
+      "explanation": "In reported speech, present tense usually changes to past tense.",
+      "example": "He said he was hungry."
+    },
+    {
+      "subcategory_name": "Reported Speech",
+      "level": "B2",
+      "question_text": "Tom told me that he ____ (see) the movie the previous week.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "had seen",
+      "explanation": "Past Simple changes to Past Perfect in reported speech.",
+      "example": "She said she had finished her homework."
+    },
+    {
+      "subcategory_name": "Reported Speech",
+      "level": "C1",
+      "question_text": "Is this statement true or false: 'Time expressions change in reported speech: 'yesterday' becomes 'the day before'.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Time and place references shift in reported speech to match the reporting context.",
+      "example": "'I'll see you tomorrow' becomes 'He said he would see me the next day.'"
+    },
+    {
+      "subcategory_name": "Adjective Order",
+      "level": "B1",
+      "question_text": "She bought a ____ dress.",
+      "question_type": "multiple_choice",
+      "options": ["red beautiful silk", "beautiful red silk", "silk beautiful red", "red silk beautiful"],
+      "correct_answer": "beautiful red silk",
+      "explanation": "Adjective order: opinion - color - material.",
+      "example": "A lovely old wooden house."
+    },
+    {
+      "subcategory_name": "Quantifiers",
+      "level": "A2",
+      "question_text": "There are ____ people in the room.",
+      "question_type": "multiple_choice",
+      "options": ["much", "many", "a lot", "lots"],
+      "correct_answer": "many",
+      "explanation": "Use 'many' with countable nouns in questions and negatives.",
+      "example": "How many cars do you have?"
+    },
+    {
+      "subcategory_name": "Quantifiers",
+      "level": "B1",
+      "question_text": "I don't have ____ time today.",
+      "question_type": "multiple_choice",
+      "options": ["many", "much", "few", "little"],
+      "correct_answer": "much",
+      "explanation": "Use 'much' with uncountable nouns in negatives and questions.",
+      "example": "There isn't much water left."
+    },
+    {
+      "subcategory_name": "Quantifiers",
+      "level": "B1",
+      "question_text": "There are ____ (few) students this year than last year.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "fewer",
+      "explanation": "'Fewer' is the comparative form of 'few' for countable nouns.",
+      "example": "We have fewer problems now."
+    },
+    {
+        "subcategory_name": "Past Continuous",
+        "level": "A2",
+        "question_text": "While I ___ (cook) dinner, my brother was watching TV.",
+        "question_type": "fill_in_blank",
+        "options": null,
+        "correct_answer": "was cooking",
+        "explanation": "Past Continuous is used for actions in progress at a specific time in the past.",
+        "example": "She was studying when I called."
+      },
+      {
+        "subcategory_name": "Past Continuous",
+        "level": "B1",
+        "question_text": "Which sentence is correct?",
+        "question_type": "multiple_choice",
+        "options": [
+          "They was playing chess at 5 PM.",
+          "They were playing chess at 5 PM.",
+          "They are playing chess at 5 PM."
+        ],
+        "correct_answer": "They were playing chess at 5 PM.",
+        "explanation": "'Were' is used with 'they' in Past Continuous.",
+        "example": "We were talking when the teacher arrived."
+      },
+      {
+        "subcategory_name": "Articles",
+        "level": "A2",
+        "question_text": "I saw ___ owl in the tree last night.",
+        "question_type": "fill_in_blank",
+        "options": ["a", "an", "the"],
+        "correct_answer": "an",
+        "explanation": "Use 'an' before words with a vowel sound (like 'owl').",
+        "example": "An hour, an umbrella."
+      },
+      {
+        "subcategory_name": "Articles",
+        "level": "B1",
+        "question_text": "Is this true? 'We use 'the' with things mentioned for the second time.'",
+        "question_type": "true_false",
+        "options": ["True", "False"],
+        "correct_answer": "True",
+        "explanation": "'The' is definite and refers to specific nouns.",
+        "example": "I saw a cat. The cat was black."
+      },
+      {
+        "subcategory_name": "Present Perfect",
+        "level": "A2",
+        "question_text": "She ___ (finish) her homework already.",
+        "question_type": "fill_in_blank",
+        "options": null,
+        "correct_answer": "has finished",
+        "explanation": "Present Perfect is used for completed actions with present relevance.",
+        "example": "They have visited Paris twice."
+      },
+      {
+        "subcategory_name": "Present Perfect",
+        "level": "B1",
+        "question_text": "Which sentence uses Present Perfect correctly?",
+        "question_type": "multiple_choice",
+        "options": [
+          "I have seen that movie yesterday.",
+          "I have seen that movie.",
+          "I saw that movie last week."
+        ],
+        "correct_answer": "I have seen that movie.",
+        "explanation": "Present Perfect doesn't use specific past time expressions.",
+        "example": "He has never been to Japan."
+      },
+      {
+        "subcategory_name": "Comparatives",
+        "level": "A2",
+        "question_text": "This book is ___ (interesting) than that one.",
+        "question_type": "fill_in_blank",
+        "options": null,
+        "correct_answer": "more interesting",
+        "explanation": "Long adjectives use 'more' in comparatives.",
+        "example": "She is more intelligent than her brother."
+      },
+      {
+        "subcategory_name": "Comparatives",
+        "level": "B1",
+        "question_text": "Is this correct? 'This is the most tallest building in the city.'",
+        "question_type": "true_false",
+        "options": ["True", "False"],
+        "correct_answer": "False",
+        "explanation": "'Tallest' is already superlative; 'most' is redundant.",
+        "example": "Correct: This is the tallest building."
+      },
+      {
+        "subcategory_name": "Past Simple",
+        "level": "A2",
+        "question_text": "They ___ (go) to Spain last summer.",
+        "question_type": "fill_in_blank",
+        "options": null,
+        "correct_answer": "went",
+        "explanation": "Past Simple is used for completed actions in the past.",
+        "example": "She ate pizza for dinner."
+      },
+      {
+        "subcategory_name": "Past Simple",
+        "level": "B1",
+        "question_text": "Which is the correct Past Simple form of 'take'?",
+        "question_type": "multiple_choice",
+        "options": ["taked", "took", "taken"],
+        "correct_answer": "took",
+        "explanation": "Irregular verbs have unique Past Simple forms.",
+        "example": "I took a photo of the sunset."
+      },
+      {
+        "subcategory_name": "Future Simple",
+        "level": "A2",
+        "question_text": "___ you ___ (call) me tomorrow?",
+        "question_type": "fill_in_blank",
+        "options": null,
+        "correct_answer": "Will, call",
+        "explanation": "Future Simple uses 'will' + base verb for predictions or promises.",
+        "example": "She will arrive at 8 PM."
+      },
+      {
+        "subcategory_name": "Future Simple",
+        "level": "B1",
+        "question_text": "Is this correct? 'I think it will rains tomorrow.'",
+        "question_type": "true_false",
+        "options": ["True", "False"],
+        "correct_answer": "False",
+        "explanation": "After 'will', use the base form of the verb (rain).",
+        "example": "Correct: It will rain tomorrow."
+      },
+      {
+        "subcategory_name": "Present Continuous",
+        "level": "A2",
+        "question_text": "Look! The dog ___ (run) in the garden.",
+        "question_type": "fill_in_blank",
+        "options": null,
+        "correct_answer": "is running",
+        "explanation": "Present Continuous describes actions happening now.",
+        "example": "They are watching TV."
+      },
+      {
+        "subcategory_name": "Present Continuous",
+        "level": "B1",
+        "question_text": "Which sentence is correct?",
+        "question_type": "multiple_choice",
+        "options": [
+          "She is not understanding the question.",
+          "She doesn’t understand the question.",
+          "Both are correct."
+        ],
+        "correct_answer": "She doesn’t understand the question.",
+        "explanation": "Some verbs (like 'understand') are rarely used in continuous tenses.",
+        "example": "I know the answer (not 'I am knowing')."
+      },
+      {
+        "subcategory_name": "Modal Verbs",
+        "level": "A2",
+        "question_text": "You ___ stop when the traffic light is red.",
+        "question_type": "fill_in_blank",
+        "options": ["can", "must", "might"],
+        "correct_answer": "must",
+        "explanation": "'Must' expresses obligation or necessity.",
+        "example": "You must wear a seatbelt."
+      },
+      {
+        "subcategory_name": "Modal Verbs",
+        "level": "B1",
+        "question_text": "Is this correct? 'She can to swim very well.'",
+        "question_type": "true_false",
+        "options": ["True", "False"],
+        "correct_answer": "False",
+        "explanation": "After modal verbs (can, must, etc.), use the base form of the verb.",
+        "example": "Correct: She can swim very well."
+      },
+      {
+        "subcategory_name": "Prepositions",
+        "level": "A2",
+        "question_text": "I’m good ___ playing chess.",
+        "question_type": "fill_in_blank",
+        "options": ["at", "in", "on"],
+        "correct_answer": "at",
+        "explanation": "'Good at' is a fixed prepositional phrase.",
+        "example": "He is bad at singing."
+      },
+      {
+        "subcategory_name": "Prepositions",
+        "level": "B1",
+        "question_text": "Which sentence is correct?",
+        "question_type": "multiple_choice",
+        "options": [
+          "We arrived to the airport.",
+          "We arrived at the airport.",
+          "We arrived in the airport."
+        ],
+        "correct_answer": "We arrived at the airport.",
+        "explanation": "'Arrive' is followed by 'at' for specific places.",
+        "example": "They arrived at the hotel."
+      },
+      {
+        "subcategory_name": "Conditionals",
+        "level": "A2",
+        "question_text": "If it ___ (rain), we will stay at home.",
+        "question_type": "fill_in_blank",
+        "options": null,
+        "correct_answer": "rains",
+        "explanation": "First Conditional uses 'if + Present Simple, ... will + base verb'.",
+        "example": "If you study, you will pass the exam."
+      },
+      {
+        "subcategory_name": "Conditionals",
+        "level": "B1",
+        "question_text": "Is this correct? 'If I would have time, I would help you.'",
+        "question_type": "true_false",
+        "options": ["True", "False"],
+        "correct_answer": "False",
+        "explanation": "Second Conditional structure: 'If + Past Simple, ... would + base verb'.",
+        "example": "Correct: If I had time, I would help you."
+      },
+      {
+    "subcategory_name": "Past Simple",
+    "level": "B2",
+    "question_text": "He  (realize) his mistake after reading the report.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "realized",
+    "explanation": "Use regular verb in Past Simple.",
+    "example": "She walked home yesterday."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "More and more people  (turn) to electric cars nowadays.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "are turning",
+    "explanation": "Use Present Continuous for current trends.",
+    "example": "People are using smartphones more often."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "She has  unique ability to solve problems.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' starts with a consonant sound, so we use 'a'.",
+    "example": "A university, a unique idea."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "He is  honest man who never lies.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "Use 'an' before silent 'h' words like 'honest'.",
+    "example": "An hour, an honest person."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "B2",
+    "question_text": "Why  you  the offer?",
+    "question_type": "multiple_choice",
+    "options": [
+      "did",
+      "reject",
+      "rejected",
+      "rejecting"
+    ],
+    "correct_answer": "reject",
+    "explanation": "After 'did' we use the base form of the verb.",
+    "example": "Did you call her?"
+  },
+  {
+    "subcategory_name": "Past Continuous",
+    "level": "B2",
+    "question_text": "They  (not listen) when the teacher entered.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "weren't listening",
+    "explanation": "Use 'weren't' for they/we/you in Past Continuous negative.",
+    "example": "They weren't paying attention."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "C1",
+    "question_text": "He  (realize) his mistake after reading the report.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "realized",
+    "explanation": "Use regular verb in Past Simple.",
+    "example": "She walked home yesterday."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "I  (not try) to avoid you.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "am not trying",
+    "explanation": "Use 'am not' + verb-ing for 'I' in Present Continuous negative.",
+    "example": "I am not ignoring you."
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "C1",
+    "question_text": "Water  at 100 degrees Celsius.",
+    "question_type": "multiple_choice",
+    "options": [
+      "boil",
+      "boils",
+      "boiling",
+      "boiled"
+    ],
+    "correct_answer": "boils",
+    "explanation": "Scientific facts are expressed in Present Simple.",
+    "example": "Water boils at 100°C."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "I  (not try) to avoid you.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "am not trying",
+    "explanation": "Use 'am not' + verb-ing for 'I' in Present Continuous negative.",
+    "example": "I am not ignoring you."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "More and more people  (turn) to electric cars nowadays.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "are turning",
+    "explanation": "Use Present Continuous for current trends.",
+    "example": "People are using smartphones more often."
+  },
+  {
+    "subcategory_name": "Countable and Uncountable Nouns",
+    "level": "B2",
+    "question_text": "He gave me some  on how to improve my writing.",
+    "question_type": "multiple_choice",
+    "options": [
+      "advices",
+      "advice",
+      "advise",
+      "advises"
+    ],
+    "correct_answer": "advice",
+    "explanation": "'Advice' is uncountable; never takes -s.",
+    "example": "She gave me good advice."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "I  (not try) to avoid you.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "am not trying",
+    "explanation": "Use 'am not' + verb-ing for 'I' in Present Continuous negative.",
+    "example": "I am not ignoring you."
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "B2",
+    "question_text": "The Earth  around the Sun.",
+    "question_type": "multiple_choice",
+    "options": [
+      "revolve",
+      "revolves",
+      "revolving",
+      "revolved"
+    ],
+    "correct_answer": "revolves",
+    "explanation": "Use Present Simple for universal truths with 'he/she/it'.",
+    "example": "The sun rises in the east."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "B2",
+    "question_text": "Why  you  the offer?",
+    "question_type": "multiple_choice",
+    "options": [
+      "did",
+      "reject",
+      "rejected",
+      "rejecting"
+    ],
+    "correct_answer": "reject",
+    "explanation": "After 'did' we use the base form of the verb.",
+    "example": "Did you call her?"
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He is  honest man who never lies.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "Use 'an' before silent 'h' words like 'honest'.",
+    "example": "An hour, an honest person."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "C1",
+    "question_text": "He  (realize) his mistake after reading the report.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "realized",
+    "explanation": "Use regular verb in Past Simple.",
+    "example": "She walked home yesterday."
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "C1",
+    "question_text": "The Earth  around the Sun.",
+    "question_type": "multiple_choice",
+    "options": [
+      "revolve",
+      "revolves",
+      "revolving",
+      "revolved"
+    ],
+    "correct_answer": "revolves",
+    "explanation": "Use Present Simple for universal truths with 'he/she/it'.",
+    "example": "The sun rises in the east."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He is  honest man who never lies.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "Use 'an' before silent 'h' words like 'honest'.",
+    "example": "An hour, an honest person."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "I  (not try) to avoid you.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "am not trying",
+    "explanation": "Use 'am not' + verb-ing for 'I' in Present Continuous negative.",
+    "example": "I am not ignoring you."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "I  (not try) to avoid you.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "am not trying",
+    "explanation": "Use 'am not' + verb-ing for 'I' in Present Continuous negative.",
+    "example": "I am not ignoring you."
+  },
+  {
+    "subcategory_name": "Countable and Uncountable Nouns",
+    "level": "B2",
+    "question_text": "He gave me some  on how to improve my writing.",
+    "question_type": "multiple_choice",
+    "options": [
+      "advices",
+      "advice",
+      "advise",
+      "advises"
+    ],
+    "correct_answer": "advice",
+    "explanation": "'Advice' is uncountable; never takes -s.",
+    "example": "She gave me good advice."
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "C1",
+    "question_text": "Water  at 100 degrees Celsius.",
+    "question_type": "multiple_choice",
+    "options": [
+      "boil",
+      "boils",
+      "boiling",
+      "boiled"
+    ],
+    "correct_answer": "boils",
+    "explanation": "Scientific facts are expressed in Present Simple.",
+    "example": "Water boils at 100°C."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "More and more people  (turn) to electric cars nowadays.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "are turning",
+    "explanation": "Use Present Continuous for current trends.",
+    "example": "People are using smartphones more often."
+  },
+  {
+    "subcategory_name": "Countable and Uncountable Nouns",
+    "level": "B2",
+    "question_text": "He gave me some  on how to improve my writing.",
+    "question_type": "multiple_choice",
+    "options": [
+      "advices",
+      "advice",
+      "advise",
+      "advises"
+    ],
+    "correct_answer": "advice",
+    "explanation": "'Advice' is uncountable; never takes -s.",
+    "example": "She gave me good advice."
+  },
+  {
+    "subcategory_name": "Past Continuous",
+    "level": "C1",
+    "question_text": "They  (not listen) when the teacher entered.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "weren't listening",
+    "explanation": "Use 'weren't' for they/we/you in Past Continuous negative.",
+    "example": "They weren't paying attention."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "B2",
+    "question_text": "He  (realize) his mistake after reading the report.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "realized",
+    "explanation": "Use regular verb in Past Simple.",
+    "example": "She walked home yesterday."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "B2",
+    "question_text": "More and more people  (turn) to electric cars nowadays.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "are turning",
+    "explanation": "Use Present Continuous for current trends.",
+    "example": "People are using smartphones more often."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "She has  unique ability to solve problems.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' starts with a consonant sound, so we use 'a'.",
+    "example": "A university, a unique idea."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "B2",
+    "question_text": "He  (realize) his mistake after reading the report.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "realized",
+    "explanation": "Use regular verb in Past Simple.",
+    "example": "She walked home yesterday."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "She has  unique ability to solve problems.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' starts with a consonant sound, so we use 'a'.",
+    "example": "A university, a unique idea."
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "B2",
+    "question_text": "The Earth  around the Sun.",
+    "question_type": "multiple_choice",
+    "options": [
+      "revolve",
+      "revolves",
+      "revolving",
+      "revolved"
+    ],
+    "correct_answer": "revolves",
+    "explanation": "Use Present Simple for universal truths with 'he/she/it'.",
+    "example": "The sun rises in the east."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "C1",
+    "question_text": "He  (realize) his mistake after reading the report.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "realized",
+    "explanation": "Use regular verb in Past Simple.",
+    "example": "She walked home yesterday."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "He is  honest man who never lies.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "Use 'an' before silent 'h' words like 'honest'.",
+    "example": "An hour, an honest person."
+  },
+  {
+    "subcategory_name": "Countable and Uncountable Nouns",
+    "level": "B2",
+    "question_text": "There isn’t  information available on this topic.",
+    "question_type": "multiple_choice",
+    "options": [
+      "many",
+      "much",
+      "a few",
+      "several"
+    ],
+    "correct_answer": "much",
+    "explanation": "'Much' is used with uncountable nouns.",
+    "example": "There isn't much sugar left."
+  },
+  {
+    "subcategory_name": "Present Continuous",
+    "level": "C1",
+    "question_text": "I  (not try) to avoid you.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "am not trying",
+    "explanation": "Use 'am not' + verb-ing for 'I' in Present Continuous negative.",
+    "example": "I am not ignoring you."
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "C1",
+    "question_text": "Water  at 100 degrees Celsius.",
+    "question_type": "multiple_choice",
+    "options": [
+      "boil",
+      "boils",
+      "boiling",
+      "boiled"
+    ],
+    "correct_answer": "boils",
+    "explanation": "Scientific facts are expressed in Present Simple.",
+    "example": "Water boils at 100°C."
+  },
+  {
+    "subcategory_name": "Prepositions",
+    "level": "C1",
+    "question_text": "He divided the cake  six equal parts.",
+    "question_type": "multiple_choice",
+    "options": [
+      "in",
+      "into",
+      "on",
+      "at"
+    ],
+    "correct_answer": "into",
+    "explanation": "'Into' is used to show division.",
+    "example": "Cut the apple into slices."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "She has  unique ability to solve problems.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' starts with a consonant sound, so we use 'a'.",
+    "example": "A university, a unique idea."
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "C1",
+    "question_text": "The Earth  around the Sun.",
+    "question_type": "multiple_choice",
+    "options": [
+      "revolve",
+      "revolves",
+      "revolving",
+      "revolved"
+    ],
+    "correct_answer": "revolves",
+    "explanation": "Use Present Simple for universal truths with 'he/she/it'.",
+    "example": "The sun rises in the east."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "B2",
+    "question_text": "He  (realize) his mistake after reading the report.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "realized",
+    "explanation": "Use regular verb in Past Simple.",
+    "example": "She walked home yesterday."
+  },
+  {
+    "subcategory_name": "Past Continuous",
+    "level": "B2",
+    "question_text": "While I  (walk) home, it started to snow.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "was walking",
+    "explanation": "Past Continuous is used for an action in progress in the past.",
+    "example": "I was walking when I slipped."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "She has  unique ability to solve problems.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' starts with a consonant sound, so we use 'a'.",
+    "example": "A university, a unique idea."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "C1",
+    "question_text": "Why  you  the offer?",
+    "question_type": "multiple_choice",
+    "options": [
+      "did",
+      "reject",
+      "rejected",
+      "rejecting"
+    ],
+    "correct_answer": "reject",
+    "explanation": "After 'did' we use the base form of the verb.",
+    "example": "Did you call her?"
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "B2",
+    "question_text": "Water  at 100 degrees Celsius.",
+    "question_type": "multiple_choice",
+    "options": [
+      "boil",
+      "boils",
+      "boiling",
+      "boiled"
+    ],
+    "correct_answer": "boils",
+    "explanation": "Scientific facts are expressed in Present Simple.",
+    "example": "Water boils at 100°C."
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "C1",
+    "question_text": "Water  at 100 degrees Celsius.",
+    "question_type": "multiple_choice",
+    "options": [
+      "boil",
+      "boils",
+      "boiling",
+      "boiled"
+    ],
+    "correct_answer": "boils",
+    "explanation": "Scientific facts are expressed in Present Simple.",
+    "example": "Water boils at 100°C."
+  },
+  {
+    "subcategory_name": "Past Continuous",
+    "level": "B2",
+    "question_text": "They  (not listen) when the teacher entered.",
+    "question_type": "fill_in_blank",
+    "options": [],
+    "correct_answer": "weren't listening",
+    "explanation": "Use 'weren't' for they/we/you in Past Continuous negative.",
+    "example": "They weren't paying attention."
+  },
+  {
+    "subcategory_name": "Prepositions",
+    "level": "C1",
+    "question_text": "The report must be submitted  Friday at the latest.",
+    "question_type": "multiple_choice",
+    "options": [
+      "by",
+      "on",
+      "in",
+      "at"
+    ],
+    "correct_answer": "by",
+    "explanation": "'By' is used to indicate a deadline.",
+    "example": "Please finish the work by Monday."
+  },
+  {
+    "subcategory_name": "Past Simple",
+    "level": "B2",
+    "question_text": "Why  you  the offer?",
+    "question_type": "multiple_choice",
+    "options": [
+      "did",
+      "reject",
+      "rejected",
+      "rejecting"
+    ],
+    "correct_answer": "reject",
+    "explanation": "After 'did' we use the base form of the verb.",
+    "example": "Did you call her?"
+  },
+  {
+    "subcategory_name": "Present Simple",
+    "level": "B2",
+    "question_text": "Water  at 100 degrees Celsius.",
+    "question_type": "multiple_choice",
+    "options": [
+      "boil",
+      "boils",
+      "boiling",
+      "boiled"
+    ],
+    "correct_answer": "boils",
+    "explanation": "Scientific facts are expressed in Present Simple.",
+    "example": "Water boils at 100°C."
+  },
+
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He works as ___ engineer in a multinational company.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: engineer.",
+    "example": "She's an artist."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "___ Amazon River is one of the longest rivers in the world.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' before names of rivers.",
+    "example": "The Nile, the Amazon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "They live in ___ European country.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'European' starts with 'yoo' sound — a consonant sound, so use 'a'.",
+    "example": "A European country."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He arrived without ___ umbrella.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: umbrella.",
+    "example": "An umbrella, an uncle."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "I need ___ hour to finish this task.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h' as in 'hour'.",
+    "example": "It takes an hour to get there."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "She has ___ unique talent for languages.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' begins with a 'yoo' sound (consonant sound), so use 'a'.",
+    "example": "A unique idea."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He was ___ first person to arrive.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used before ordinal numbers.",
+    "example": "The second attempt."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "Do you have ___ pen I could borrow?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when mentioning something for the first time.",
+    "example": "I saw a bird."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He’s ___ honest man.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h'.",
+    "example": "An honest person."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He works as ___ engineer in a multinational company.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: engineer.",
+    "example": "She's an artist."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "They live in ___ European country.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'European' starts with 'yoo' sound — a consonant sound, so use 'a'.",
+    "example": "A European country."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "They live in ___ European country.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'European' starts with 'yoo' sound — a consonant sound, so use 'a'.",
+    "example": "A European country."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I love reading ___ books by Tolstoy.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' with specific known things.",
+    "example": "The books on the table."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "___ Moon looks especially bright tonight.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' for unique objects like 'the Moon'.",
+    "example": "The Sun, the Earth, the Moon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "___ Amazon River is one of the longest rivers in the world.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' before names of rivers.",
+    "example": "The Nile, the Amazon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "We had to take ___ exam at the end of the course.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: exam.",
+    "example": "An exam, an apple."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I need ___ hour to finish this task.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h' as in 'hour'.",
+    "example": "It takes an hour to get there."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "Do you have ___ pen I could borrow?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when mentioning something for the first time.",
+    "example": "I saw a bird."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "___ Amazon River is one of the longest rivers in the world.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' before names of rivers.",
+    "example": "The Nile, the Amazon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "They live in ___ European country.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'European' starts with 'yoo' sound — a consonant sound, so use 'a'.",
+    "example": "A European country."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "We stayed at ___ hotel near the beach.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when the noun is mentioned for the first time.",
+    "example": "We stayed at a guesthouse."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "We stayed at ___ hotel near the beach.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when the noun is mentioned for the first time.",
+    "example": "We stayed at a guesthouse."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He’s ___ honest man.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h'.",
+    "example": "An honest person."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He arrived without ___ umbrella.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: umbrella.",
+    "example": "An umbrella, an uncle."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I love reading ___ books by Tolstoy.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' with specific known things.",
+    "example": "The books on the table."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He works as ___ engineer in a multinational company.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: engineer.",
+    "example": "She's an artist."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "We had to take ___ exam at the end of the course.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: exam.",
+    "example": "An exam, an apple."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "___ Moon looks especially bright tonight.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' for unique objects like 'the Moon'.",
+    "example": "The Sun, the Earth, the Moon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "We had to take ___ exam at the end of the course.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: exam.",
+    "example": "An exam, an apple."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "I saw ___ elephant in the zoo.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: elephant.",
+    "example": "An elephant never forgets."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I need ___ hour to finish this task.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h' as in 'hour'.",
+    "example": "It takes an hour to get there."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "___ Amazon River is one of the longest rivers in the world.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' before names of rivers.",
+    "example": "The Nile, the Amazon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "___ Moon looks especially bright tonight.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' for unique objects like 'the Moon'.",
+    "example": "The Sun, the Earth, the Moon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "I need ___ hour to finish this task.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h' as in 'hour'.",
+    "example": "It takes an hour to get there."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "They climbed ___ highest mountain in the region.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' with superlatives.",
+    "example": "The best day of my life."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "She has ___ unique talent for languages.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' begins with a 'yoo' sound (consonant sound), so use 'a'.",
+    "example": "A unique idea."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "She's ___ only person I trust.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used with 'only'.",
+    "example": "The only choice."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "Do you remember ___ girl we met at the party?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' for something both speaker and listener know.",
+    "example": "The man we saw earlier."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "We had to take ___ exam at the end of the course.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: exam.",
+    "example": "An exam, an apple."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "She's ___ only person I trust.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used with 'only'.",
+    "example": "The only choice."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "Do you remember ___ girl we met at the party?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' for something both speaker and listener know.",
+    "example": "The man we saw earlier."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "I saw ___ elephant in the zoo.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: elephant.",
+    "example": "An elephant never forgets."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "He was ___ first person to arrive.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used before ordinal numbers.",
+    "example": "The second attempt."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "They climbed ___ highest mountain in the region.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' with superlatives.",
+    "example": "The best day of my life."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "He plays ___ guitar like a professional.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' when referring to instruments.",
+    "example": "She plays the piano well."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "We stayed at ___ hotel near the beach.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when the noun is mentioned for the first time.",
+    "example": "We stayed at a guesthouse."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "I need ___ hour to finish this task.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h' as in 'hour'.",
+    "example": "It takes an hour to get there."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He’s ___ honest man.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h'.",
+    "example": "An honest person."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "___ Moon looks especially bright tonight.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' for unique objects like 'the Moon'.",
+    "example": "The Sun, the Earth, the Moon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He was ___ first person to arrive.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used before ordinal numbers.",
+    "example": "The second attempt."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "They climbed ___ highest mountain in the region.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' with superlatives.",
+    "example": "The best day of my life."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He plays ___ guitar like a professional.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' when referring to instruments.",
+    "example": "She plays the piano well."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "He arrived without ___ umbrella.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: umbrella.",
+    "example": "An umbrella, an uncle."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He plays ___ guitar like a professional.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' when referring to instruments.",
+    "example": "She plays the piano well."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He was ___ first person to arrive.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used before ordinal numbers.",
+    "example": "The second attempt."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "I need ___ hour to finish this task.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h' as in 'hour'.",
+    "example": "It takes an hour to get there."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "She's ___ only person I trust.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used with 'only'.",
+    "example": "The only choice."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "She's ___ only person I trust.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used with 'only'.",
+    "example": "The only choice."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He arrived without ___ umbrella.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: umbrella.",
+    "example": "An umbrella, an uncle."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "He works as ___ engineer in a multinational company.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: engineer.",
+    "example": "She's an artist."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "We stayed at ___ hotel near the beach.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when the noun is mentioned for the first time.",
+    "example": "We stayed at a guesthouse."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He arrived without ___ umbrella.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: umbrella.",
+    "example": "An umbrella, an uncle."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "They climbed ___ highest mountain in the region.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' with superlatives.",
+    "example": "The best day of my life."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "___ Amazon River is one of the longest rivers in the world.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' before names of rivers.",
+    "example": "The Nile, the Amazon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "Do you have ___ pen I could borrow?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when mentioning something for the first time.",
+    "example": "I saw a bird."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "___ Amazon River is one of the longest rivers in the world.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' before names of rivers.",
+    "example": "The Nile, the Amazon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He’s ___ honest man.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h'.",
+    "example": "An honest person."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "___ Amazon River is one of the longest rivers in the world.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' before names of rivers.",
+    "example": "The Nile, the Amazon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "He plays ___ guitar like a professional.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' when referring to instruments.",
+    "example": "She plays the piano well."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "We had to take ___ exam at the end of the course.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: exam.",
+    "example": "An exam, an apple."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "We had to take ___ exam at the end of the course.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: exam.",
+    "example": "An exam, an apple."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "___ Amazon River is one of the longest rivers in the world.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' before names of rivers.",
+    "example": "The Nile, the Amazon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "I saw ___ elephant in the zoo.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: elephant.",
+    "example": "An elephant never forgets."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "___ Moon looks especially bright tonight.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' for unique objects like 'the Moon'.",
+    "example": "The Sun, the Earth, the Moon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "She has ___ unique talent for languages.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' begins with a 'yoo' sound (consonant sound), so use 'a'.",
+    "example": "A unique idea."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "Do you have ___ pen I could borrow?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when mentioning something for the first time.",
+    "example": "I saw a bird."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "___ Moon looks especially bright tonight.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' for unique objects like 'the Moon'.",
+    "example": "The Sun, the Earth, the Moon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "They climbed ___ highest mountain in the region.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' with superlatives.",
+    "example": "The best day of my life."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "He was ___ first person to arrive.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used before ordinal numbers.",
+    "example": "The second attempt."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "She adopted ___ unusual method to solve the problem.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before vowel sounds like 'unusual'.",
+    "example": "She used an unusual approach."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "He works as ___ engineer in a multinational company.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: engineer.",
+    "example": "She's an artist."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "He works as ___ engineer in a multinational company.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: engineer.",
+    "example": "She's an artist."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I saw ___ elephant in the zoo.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: elephant.",
+    "example": "An elephant never forgets."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "We had to take ___ exam at the end of the course.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: exam.",
+    "example": "An exam, an apple."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "She's ___ only person I trust.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used with 'only'.",
+    "example": "The only choice."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "They climbed ___ highest mountain in the region.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' with superlatives.",
+    "example": "The best day of my life."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He works as ___ engineer in a multinational company.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: engineer.",
+    "example": "She's an artist."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "Do you remember ___ girl we met at the party?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' for something both speaker and listener know.",
+    "example": "The man we saw earlier."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "They climbed ___ highest mountain in the region.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' with superlatives.",
+    "example": "The best day of my life."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "They live in ___ European country.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'European' starts with 'yoo' sound — a consonant sound, so use 'a'.",
+    "example": "A European country."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "He was ___ first person to arrive.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used before ordinal numbers.",
+    "example": "The second attempt."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "She has ___ unique talent for languages.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' begins with a 'yoo' sound (consonant sound), so use 'a'.",
+    "example": "A unique idea."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "He works as ___ engineer in a multinational company.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: engineer.",
+    "example": "She's an artist."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "She's ___ only person I trust.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used with 'only'.",
+    "example": "The only choice."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "She has ___ unique talent for languages.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' begins with a 'yoo' sound (consonant sound), so use 'a'.",
+    "example": "A unique idea."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "She adopted ___ unusual method to solve the problem.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before vowel sounds like 'unusual'.",
+    "example": "She used an unusual approach."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "___ Moon looks especially bright tonight.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' for unique objects like 'the Moon'.",
+    "example": "The Sun, the Earth, the Moon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "She's ___ only person I trust.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used with 'only'.",
+    "example": "The only choice."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "They live in ___ European country.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'European' starts with 'yoo' sound — a consonant sound, so use 'a'.",
+    "example": "A European country."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He works as ___ engineer in a multinational company.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: engineer.",
+    "example": "She's an artist."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "She has ___ unique talent for languages.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' begins with a 'yoo' sound (consonant sound), so use 'a'.",
+    "example": "A unique idea."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "We had to take ___ exam at the end of the course.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: exam.",
+    "example": "An exam, an apple."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "She's ___ only person I trust.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used with 'only'.",
+    "example": "The only choice."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "I saw ___ elephant in the zoo.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: elephant.",
+    "example": "An elephant never forgets."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I love reading ___ books by Tolstoy.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' with specific known things.",
+    "example": "The books on the table."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "We stayed at ___ hotel near the beach.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when the noun is mentioned for the first time.",
+    "example": "We stayed at a guesthouse."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "He was ___ first person to arrive.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used before ordinal numbers.",
+    "example": "The second attempt."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "I saw ___ elephant in the zoo.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: elephant.",
+    "example": "An elephant never forgets."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "We stayed at ___ hotel near the beach.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when the noun is mentioned for the first time.",
+    "example": "We stayed at a guesthouse."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "Do you have ___ pen I could borrow?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when mentioning something for the first time.",
+    "example": "I saw a bird."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "They live in ___ European country.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'European' starts with 'yoo' sound — a consonant sound, so use 'a'.",
+    "example": "A European country."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He arrived without ___ umbrella.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: umbrella.",
+    "example": "An umbrella, an uncle."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He arrived without ___ umbrella.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: umbrella.",
+    "example": "An umbrella, an uncle."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "Do you have ___ pen I could borrow?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when mentioning something for the first time.",
+    "example": "I saw a bird."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I need ___ hour to finish this task.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h' as in 'hour'.",
+    "example": "It takes an hour to get there."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I need ___ hour to finish this task.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h' as in 'hour'.",
+    "example": "It takes an hour to get there."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "Do you have ___ pen I could borrow?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when mentioning something for the first time.",
+    "example": "I saw a bird."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "He’s ___ honest man.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h'.",
+    "example": "An honest person."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He was ___ first person to arrive.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used before ordinal numbers.",
+    "example": "The second attempt."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He was ___ first person to arrive.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used before ordinal numbers.",
+    "example": "The second attempt."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He works as ___ engineer in a multinational company.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: engineer.",
+    "example": "She's an artist."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "She's ___ only person I trust.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used with 'only'.",
+    "example": "The only choice."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "Do you have ___ pen I could borrow?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when mentioning something for the first time.",
+    "example": "I saw a bird."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "Do you have ___ pen I could borrow?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when mentioning something for the first time.",
+    "example": "I saw a bird."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "They live in ___ European country.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'European' starts with 'yoo' sound — a consonant sound, so use 'a'.",
+    "example": "A European country."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He was ___ first person to arrive.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used before ordinal numbers.",
+    "example": "The second attempt."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "She has ___ unique talent for languages.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' begins with a 'yoo' sound (consonant sound), so use 'a'.",
+    "example": "A unique idea."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "I saw ___ elephant in the zoo.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: elephant.",
+    "example": "An elephant never forgets."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "I need ___ hour to finish this task.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h' as in 'hour'.",
+    "example": "It takes an hour to get there."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "Do you have ___ pen I could borrow?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when mentioning something for the first time.",
+    "example": "I saw a bird."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "She adopted ___ unusual method to solve the problem.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before vowel sounds like 'unusual'.",
+    "example": "She used an unusual approach."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "Do you remember ___ girl we met at the party?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' for something both speaker and listener know.",
+    "example": "The man we saw earlier."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "We stayed at ___ hotel near the beach.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when the noun is mentioned for the first time.",
+    "example": "We stayed at a guesthouse."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "Do you remember ___ girl we met at the party?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' for something both speaker and listener know.",
+    "example": "The man we saw earlier."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "___ Moon looks especially bright tonight.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' for unique objects like 'the Moon'.",
+    "example": "The Sun, the Earth, the Moon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "I saw ___ elephant in the zoo.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: elephant.",
+    "example": "An elephant never forgets."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "She has ___ unique talent for languages.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'Unique' begins with a 'yoo' sound (consonant sound), so use 'a'.",
+    "example": "A unique idea."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He works as ___ engineer in a multinational company.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: engineer.",
+    "example": "She's an artist."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "We stayed at ___ hotel near the beach.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when the noun is mentioned for the first time.",
+    "example": "We stayed at a guesthouse."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He works as ___ engineer in a multinational company.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: engineer.",
+    "example": "She's an artist."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He works as ___ engineer in a multinational company.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: engineer.",
+    "example": "She's an artist."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "She adopted ___ unusual method to solve the problem.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before vowel sounds like 'unusual'.",
+    "example": "She used an unusual approach."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "We had to take ___ exam at the end of the course.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: exam.",
+    "example": "An exam, an apple."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "___ Moon looks especially bright tonight.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' for unique objects like 'the Moon'.",
+    "example": "The Sun, the Earth, the Moon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "We had to take ___ exam at the end of the course.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: exam.",
+    "example": "An exam, an apple."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "___ Amazon River is one of the longest rivers in the world.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' before names of rivers.",
+    "example": "The Nile, the Amazon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He plays ___ guitar like a professional.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' when referring to instruments.",
+    "example": "She plays the piano well."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "They climbed ___ highest mountain in the region.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' with superlatives.",
+    "example": "The best day of my life."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "We stayed at ___ hotel near the beach.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when the noun is mentioned for the first time.",
+    "example": "We stayed at a guesthouse."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He was ___ first person to arrive.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used before ordinal numbers.",
+    "example": "The second attempt."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "She adopted ___ unusual method to solve the problem.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before vowel sounds like 'unusual'.",
+    "example": "She used an unusual approach."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "Do you have ___ pen I could borrow?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when mentioning something for the first time.",
+    "example": "I saw a bird."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He plays ___ guitar like a professional.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' when referring to instruments.",
+    "example": "She plays the piano well."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "I love reading ___ books by Tolstoy.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' with specific known things.",
+    "example": "The books on the table."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "She adopted ___ unusual method to solve the problem.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before vowel sounds like 'unusual'.",
+    "example": "She used an unusual approach."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "We had to take ___ exam at the end of the course.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: exam.",
+    "example": "An exam, an apple."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He arrived without ___ umbrella.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: umbrella.",
+    "example": "An umbrella, an uncle."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "___ Moon looks especially bright tonight.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' for unique objects like 'the Moon'.",
+    "example": "The Sun, the Earth, the Moon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "We had to take ___ exam at the end of the course.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: exam.",
+    "example": "An exam, an apple."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He plays ___ guitar like a professional.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' when referring to instruments.",
+    "example": "She plays the piano well."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "We stayed at ___ hotel near the beach.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when the noun is mentioned for the first time.",
+    "example": "We stayed at a guesthouse."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "She's ___ only person I trust.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used with 'only'.",
+    "example": "The only choice."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He plays ___ guitar like a professional.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' when referring to instruments.",
+    "example": "She plays the piano well."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "I need ___ hour to finish this task.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h' as in 'hour'.",
+    "example": "It takes an hour to get there."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He plays ___ guitar like a professional.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' when referring to instruments.",
+    "example": "She plays the piano well."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "She's ___ only person I trust.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used with 'only'.",
+    "example": "The only choice."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He was ___ first person to arrive.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used before ordinal numbers.",
+    "example": "The second attempt."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "We had to take ___ exam at the end of the course.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: exam.",
+    "example": "An exam, an apple."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "They live in ___ European country.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'European' starts with 'yoo' sound — a consonant sound, so use 'a'.",
+    "example": "A European country."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "Do you have ___ pen I could borrow?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'A' is used when mentioning something for the first time.",
+    "example": "I saw a bird."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "I need ___ hour to finish this task.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h' as in 'hour'.",
+    "example": "It takes an hour to get there."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "I need ___ hour to finish this task.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h' as in 'hour'.",
+    "example": "It takes an hour to get there."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "___ Moon looks especially bright tonight.",
+    "question_type": "multiple_choice",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct_answer": "The",
+    "explanation": "Use 'the' for unique objects like 'the Moon'.",
+    "example": "The Sun, the Earth, the Moon."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "She's ___ only person I trust.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "'The' is used with 'only'.",
+    "example": "The only choice."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "They live in ___ European country.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "a",
+    "explanation": "'European' starts with 'yoo' sound — a consonant sound, so use 'a'.",
+    "example": "A European country."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B2",
+    "question_text": "He plays ___ guitar like a professional.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' when referring to instruments.",
+    "example": "She plays the piano well."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I saw ___ elephant in the zoo.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: elephant.",
+    "example": "An elephant never forgets."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "I need ___ hour to finish this task.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h' as in 'hour'.",
+    "example": "It takes an hour to get there."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "Do you remember ___ girl we met at the party?",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "explanation": "Use 'the' for something both speaker and listener know.",
+    "example": "The man we saw earlier."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "He works as ___ engineer in a multinational company.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' before vowel sound: engineer.",
+    "example": "She's an artist."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "C1",
+    "question_text": "I don’t have ___ idea what you’re talking about.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'Idea' starts with a vowel sound, use 'an'.",
+    "example": "An idea struck him."
+  },
+  {
+    "subcategory_name": "Articles",
+    "level": "B1",
+    "question_text": "I need ___ hour to finish this task.",
+    "question_type": "multiple_choice",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "'An' is used before silent 'h' as in 'hour'.",
+    "example": "It takes an hour to get there."
+  },
+  {
+    "subcategory_name": "Collocations",
+    "level": "C1",
+    "question_text": "He ___ to work every day.",
+    "question_type": "multiple_choice",
+    "options": [
+      "go",
+      "goes",
+      "gone",
+      "going"
+    ],
+    "correct_answer": "goes",
+    "explanation": "'He' takes 'goes' in Present Simple.",
+    "example": "He goes to work."
+  },
+  
+  [
+    {
+      "subcategory_name": "Present Simple",
+      "level": "A1",
+      "question_text": "I ____ coffee every morning.",
+      "question_type": "multiple_choice",
+      "options": ["drink", "drinks", "drinking", "drank"],
+      "correct_answer": "drink",
+      "explanation": "Use base form with 'I' in Present Simple.",
+      "example": "I eat breakfast at 8 AM."
+    },
+    {
+      "subcategory_name": "Present Simple",
+      "level": "A1",
+      "question_text": "He ____ (not/work) on Sundays.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "doesn't work",
+      "explanation": "Use 'doesn't' with third person singular in negative Present Simple.",
+      "example": "She doesn't smoke."
+    },
+    {
+      "subcategory_name": "Present Simple",
+      "level": "A1",
+      "question_text": "Is this statement true or false: 'We add -s to verbs with he/she/it in Present Simple.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Third person singular verbs take -s ending in Present Simple.",
+      "example": "He works, she plays, it runs."
+    },
+    {
+      "subcategory_name": "Present Simple",
+      "level": "A2",
+      "question_text": "Where ____ your sister live?",
+      "question_type": "multiple_choice",
+      "options": ["do", "does", "is", "are"],
+      "correct_answer": "does",
+      "explanation": "Use 'does' for questions with third person singular in Present Simple.",
+      "example": "Where does he work?"
+    },
+    {
+      "subcategory_name": "Present Simple",
+      "level": "A2",
+      "question_text": "Water ____ (boil) at 100 degrees Celsius.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "boils",
+      "explanation": "Present Simple is used for scientific facts and general truths.",
+      "example": "The sun rises in the east."
+    },
+    {
+      "subcategory_name": "Present Continuous",
+      "level": "A2",
+      "question_text": "Look! It ____ outside.",
+      "question_type": "multiple_choice",
+      "options": ["rain", "rains", "is raining", "rained"],
+      "correct_answer": "is raining",
+      "explanation": "Present Continuous describes actions happening right now.",
+      "example": "Listen! Someone is singing."
+    },
+    {
+      "subcategory_name": "Present Continuous",
+      "level": "A2",
+      "question_text": "We ____ (not/watch) TV at the moment.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "aren't watching",
+      "explanation": "Present Continuous negative: be + not + verb-ing.",
+      "example": "I'm not working today."
+    },
+    {
+      "subcategory_name": "Present Continuous",
+      "level": "B1",
+      "question_text": "Is this statement true or false: 'We use Present Continuous for temporary situations.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Present Continuous can describe temporary situations and changes.",
+      "example": "I'm staying with friends this week."
+    },
+    {
+      "subcategory_name": "Present Continuous",
+      "level": "B1",
+      "question_text": "Why ____ you always complaining?",
+      "question_type": "multiple_choice",
+      "options": ["do", "are", "is", "does"],
+      "correct_answer": "are",
+      "explanation": "Present Continuous with 'always' expresses annoyance or criticism.",
+      "example": "He's always forgetting his keys."
+    },
+    {
+      "subcategory_name": "Past Simple",
+      "level": "A2",
+      "question_text": "She ____ her homework yesterday.",
+      "question_type": "multiple_choice",
+      "options": ["finish", "finished", "finishing", "finishes"],
+      "correct_answer": "finished",
+      "explanation": "Past Simple describes completed actions in the past.",
+      "example": "I visited my grandmother last week."
+    },
+    {
+      "subcategory_name": "Past Simple",
+      "level": "A2",
+      "question_text": "They ____ (not/come) to the party last night.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "didn't come",
+      "explanation": "Past Simple negative: didn't + base form of verb.",
+      "example": "We didn't see the movie."
+    },
+    {
+      "subcategory_name": "Past Simple",
+      "level": "A2",
+      "question_text": "When ____ you born?",
+      "question_type": "multiple_choice",
+      "options": ["was", "were", "are", "did"],
+      "correct_answer": "were",
+      "explanation": "Use 'were' with 'you' in past tense questions with 'be'.",
+      "example": "Where were you yesterday?"
+    },
+    {
+      "subcategory_name": "Past Simple",
+      "level": "B1",
+      "question_text": "Is this statement true or false: 'Past Simple is used for past habits that no longer happen.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Past Simple can describe past habits, often with time expressions.",
+      "example": "When I was young, I played tennis every day."
+    },
+    {
+      "subcategory_name": "Past Continuous",
+      "level": "B1",
+      "question_text": "At 8 PM yesterday, I ____ dinner.",
+      "question_type": "multiple_choice",
+      "options": ["cooked", "was cooking", "cook", "am cooking"],
+      "correct_answer": "was cooking",
+      "explanation": "Past Continuous describes ongoing actions at a specific past time.",
+      "example": "At midnight, she was sleeping."
+    },
+    {
+      "subcategory_name": "Past Continuous",
+      "level": "B1",
+      "question_text": "While it ____ (rain), we stayed inside.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "was raining",
+      "explanation": "Past Continuous in time clauses describes background actions.",
+      "example": "While I was studying, the phone rang."
+    },
+    {
+      "subcategory_name": "Past Continuous",
+      "level": "B1",
+      "question_text": "What ____ you doing when I called?",
+      "question_type": "multiple_choice",
+      "options": ["was", "were", "did", "are"],
+      "correct_answer": "were",
+      "explanation": "Use 'were' with 'you' in Past Continuous questions.",
+      "example": "What were they saying?"
+    },
+    {
+      "subcategory_name": "Present Perfect",
+      "level": "B1",
+      "question_text": "I ____ never been to Japan.",
+      "question_type": "multiple_choice",
+      "options": ["has", "have", "had", "am"],
+      "correct_answer": "have",
+      "explanation": "Present Perfect with 'I': have + past participle.",
+      "example": "I have visited many countries."
+    },
+    {
+      "subcategory_name": "Present Perfect",
+      "level": "B1",
+      "question_text": "She ____ (just/arrive) at the airport.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "has just arrived",
+      "explanation": "Present Perfect with 'just' shows recent completion.",
+      "example": "They have just finished lunch."
+    },
+    {
+      "subcategory_name": "Present Perfect",
+      "level": "B1",
+      "question_text": "Is this statement true or false: 'Present Perfect connects past and present.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Present Perfect shows past actions with present relevance.",
+      "example": "I have lost my keys (and still don't have them)."
+    },
+    {
+      "subcategory_name": "Present Perfect",
+      "level": "B2",
+      "question_text": "How long ____ you known each other?",
+      "question_type": "multiple_choice",
+      "options": ["do", "are", "have", "did"],
+      "correct_answer": "have",
+      "explanation": "Present Perfect with 'How long' for duration from past to present.",
+      "example": "How long have you lived here?"
+    },
+    {
+      "subcategory_name": "Past Perfect",
+      "level": "B2",
+      "question_text": "When I arrived, they ____ already left.",
+      "question_type": "multiple_choice",
+      "options": ["have", "had", "has", "were"],
+      "correct_answer": "had",
+      "explanation": "Past Perfect shows an action completed before another past action.",
+      "example": "She had finished work before I called."
+    },
+    {
+      "subcategory_name": "Past Perfect",
+      "level": "B2",
+      "question_text": "He said he ____ (never/see) such a beautiful sunset.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "had never seen",
+      "explanation": "Past Perfect in reported speech for past experiences.",
+      "example": "She told me she had lived in Paris."
+    },
+    {
+      "subcategory_name": "Future Simple",
+      "level": "A2",
+      "question_text": "Tomorrow I ____ visit my grandmother.",
+      "question_type": "multiple_choice",
+      "options": ["will", "am", "going", "would"],
+      "correct_answer": "will",
+      "explanation": "Future Simple (will + base verb) for future predictions and decisions.",
+      "example": "It will rain tomorrow."
+    },
+    {
+      "subcategory_name": "Future Simple",
+      "level": "A2",
+      "question_text": "I don't think he ____ (come) to the meeting.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "will come",
+      "explanation": "Will is used after 'think' for future predictions.",
+      "example": "I think we will win the game."
+    },
+    {
+      "subcategory_name": "Going to Future",
+      "level": "A2",
+      "question_text": "Look at those clouds! It ____ rain.",
+      "question_type": "multiple_choice",
+      "options": ["will", "is going to", "goes to", "is going"],
+      "correct_answer": "is going to",
+      "explanation": "'Going to' for predictions based on present evidence.",
+      "example": "She's going to fall if she's not careful."
+    },
+    {
+      "subcategory_name": "Going to Future",
+      "level": "A2",
+      "question_text": "We ____ (buy) a new car next month.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "are going to buy",
+      "explanation": "'Going to' for planned future actions.",
+      "example": "They are going to move to Spain."
+    },
+    {
+      "subcategory_name": "Present Perfect Continuous",
+      "level": "B2",
+      "question_text": "I ____ working here for five years.",
+      "question_type": "multiple_choice",
+      "options": ["have been", "am", "was", "had been"],
+      "correct_answer": "have been",
+      "explanation": "Present Perfect Continuous for ongoing actions from past to present.",
+      "example": "She has been studying English for two years."
+    },
+    {
+      "subcategory_name": "Present Perfect Continuous",
+      "level": "B2",
+      "question_text": "How long ____ you been waiting?",
+      "question_type": "multiple_choice",
+      "options": ["do", "are", "have", "did"],
+      "correct_answer": "have",
+      "explanation": "Present Perfect Continuous questions use 'have/has been + -ing'.",
+      "example": "How long has it been raining?"
+    },
+    {
+      "subcategory_name": "Past Perfect Continuous",
+      "level": "C1",
+      "question_text": "She was tired because she ____ all day.",
+      "question_type": "multiple_choice",
+      "options": ["worked", "had been working", "was working", "has worked"],
+      "correct_answer": "had been working",
+      "explanation": "Past Perfect Continuous for ongoing actions before a past point.",
+      "example": "I was exhausted because I had been running."
+    },
+    {
+      "subcategory_name": "Future Perfect",
+      "level": "B2",
+      "question_text": "By next year, I ____ graduated from university.",
+      "question_type": "multiple_choice",
+      "options": ["will", "will have", "am going to", "would have"],
+      "correct_answer": "will have",
+      "explanation": "Future Perfect shows completion before a future time.",
+      "example": "By 6 PM, I will have finished work."
+    },
+    {
+      "subcategory_name": "Future Perfect",
+      "level": "B2",
+      "question_text": "They ____ (live) here for 10 years by December.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "will have lived",
+      "explanation": "Future Perfect: will have + past participle.",
+      "example": "We will have known each other for 20 years."
+    },
+    {
+      "subcategory_name": "Present Simple",
+      "level": "A1",
+      "question_text": "My brother ____ in London.",
+      "question_type": "multiple_choice",
+      "options": ["live", "lives", "living", "lived"],
+      "correct_answer": "lives",
+      "explanation": "Third person singular takes -s in Present Simple.",
+      "example": "She works in a hospital."
+    },
+    {
+      "subcategory_name": "Present Simple",
+      "level": "A1",
+      "question_text": "Do you ____ English at school?",
+      "question_type": "multiple_choice",
+      "options": ["study", "studies", "studying", "studied"],
+      "correct_answer": "study",
+      "explanation": "Use base form after 'do' in questions.",
+      "example": "Do they play football?"
+    },
+    {
+      "subcategory_name": "Present Simple",
+      "level": "A2",
+      "question_text": "The train ____ (leave) at 9:30 AM.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "leaves",
+      "explanation": "Present Simple for schedules and timetables.",
+      "example": "The movie starts at 8 PM."
+    },
+    {
+      "subcategory_name": "Present Simple",
+      "level": "A2",
+      "question_text": "Is this statement true or false: 'Present Simple can express future scheduled events.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Present Simple is used for fixed schedules and timetables.",
+      "example": "The flight departs tomorrow at 6 AM."
+    },
+    {
+      "subcategory_name": "Present Continuous",
+      "level": "A2",
+      "question_text": "Be quiet! The baby ____.",
+      "question_type": "multiple_choice",
+      "options": ["sleeps", "is sleeping", "sleep", "slept"],
+      "correct_answer": "is sleeping",
+      "explanation": "Present Continuous for actions happening at the moment of speaking.",
+      "example": "Shh! I'm talking on the phone."
+    },
+    {
+      "subcategory_name": "Present Continuous",
+      "level": "A2",
+      "question_text": "I ____ (meet) my friends tonight.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "am meeting",
+      "explanation": "Present Continuous for arranged future plans.",
+      "example": "We're having dinner together tomorrow."
+    },
+    {
+      "subcategory_name": "Present Continuous",
+      "level": "B1",
+      "question_text": "These days, more people ____ working from home.",
+      "question_type": "multiple_choice",
+      "options": ["work", "are working", "worked", "have worked"],
+      "correct_answer": "are working",
+      "explanation": "Present Continuous for changing situations and trends.",
+      "example": "The weather is getting warmer."
+    },
+    {
+      "subcategory_name": "Past Simple",
+      "level": "A2",
+      "question_text": "Last summer, we ____ to Greece.",
+      "question_type": "multiple_choice",
+      "options": ["go", "went", "gone", "going"],
+      "correct_answer": "went",
+      "explanation": "Past Simple for completed past actions with time references.",
+      "example": "I bought this car two years ago."
+    },
+    {
+      "subcategory_name": "Past Simple",
+      "level": "A2",
+      "question_text": "____ you enjoy the concert?",
+      "question_type": "multiple_choice",
+      "options": ["Do", "Did", "Were", "Are"],
+      "correct_answer": "Did",
+      "explanation": "Use 'did' for Past Simple questions with regular verbs.",
+      "example": "Did they visit the museum?"
+    },
+    {
+      "subcategory_name": "Past Simple",
+      "level": "B1",
+      "question_text": "He ____ (not/use) to like vegetables when he was young.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "didn't use",
+      "explanation": "'Didn't use to' for past habits that changed.",
+      "example": "I didn't use to drink coffee."
+    },
+    {
+      "subcategory_name": "Past Continuous",
+      "level": "B1",
+      "question_text": "The phone rang while I ____ a shower.",
+      "question_type": "multiple_choice",
+      "options": ["took", "was taking", "take", "am taking"],
+      "correct_answer": "was taking",
+      "explanation": "Past Continuous for interrupted actions in the past.",
+      "example": "It started raining while we were walking."
+    },
+    {
+      "subcategory_name": "Past Continuous",
+      "level": "B1",
+      "question_text": "Is this statement true or false: 'Past Continuous describes two simultaneous past actions.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Past Continuous can show two ongoing actions happening at the same time.",
+      "example": "While I was cooking, she was reading."
+    },
+    {
+      "subcategory_name": "Present Perfect",
+      "level": "B1",
+      "question_text": "____ you ever eaten sushi?",
+      "question_type": "multiple_choice",
+      "options": ["Do", "Did", "Have", "Are"],
+      "correct_answer": "Have",
+      "explanation": "Present Perfect with 'ever' for life experiences.",
+      "example": "Have you ever been to Italy?"
+    },
+    {
+      "subcategory_name": "Present Perfect",
+      "level": "B1",
+      "question_text": "I can't find my keys. I ____ (lose) them.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "have lost",
+      "explanation": "Present Perfect for past actions with present results.",
+      "example": "She has broken her leg (it's still broken)."
+    },
+    {
+      "subcategory_name": "Present Perfect",
+      "level": "B2",
+      "question_text": "This is the best movie I ____ ever seen.",
+      "question_type": "multiple_choice",
+      "options": ["have", "had", "has", "did"],
+      "correct_answer": "have",
+      "explanation": "Present Perfect in superlative expressions about life experiences.",
+      "example": "This is the worst weather we have ever had."
+    },
+    {
+      "subcategory_name": "Past Perfect",
+      "level": "B2",
+      "question_text": "By the time we arrived, the movie ____ started.",
+      "question_type": "multiple_choice",
+      "options": ["has", "have", "had", "was"],
+      "correct_answer": "had",
+      "explanation": "Past Perfect with 'by the time' for actions completed before a past moment.",
+      "example": "By the time I woke up, she had left."
+    },
+    {
+      "subcategory_name": "Past Perfect",
+      "level": "B2",
+      "question_text": "Is this statement true or false: 'Past Perfect is often used with time expressions like 'after' and 'before'.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Past Perfect clarifies the sequence of past events.",
+      "example": "After I had finished dinner, I watched TV."
+    },
+    {
+      "subcategory_name": "Future Simple",
+      "level": "A2",
+      "question_text": "I ____ help you with your homework.",
+      "question_type": "multiple_choice",
+      "options": ["will", "am going to", "would", "might"],
+      "correct_answer": "will",
+      "explanation": "'Will' for spontaneous decisions and offers.",
+      "example": "I'll answer the phone."
+    },
+    {
+      "subcategory_name": "Future Simple",
+      "level": "B1",
+      "question_text": "I promise I ____ (not/tell) anyone your secret.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "won't tell",
+      "explanation": "'Will not' for promises and commitments.",
+      "example": "I will always love you."
+    },
+    {
+      "subcategory_name": "Going to Future",
+      "level": "A2",
+      "question_text": "What ____ you going to do this weekend?",
+      "question_type": "multiple_choice",
+      "options": ["will", "are", "do", "did"],
+      "correct_answer": "are",
+      "explanation": "'Going to' questions use appropriate form of 'be'.",
+      "example": "Where is she going to study?"
+    },
+    {
+      "subcategory_name": "Going to Future",
+      "level": "B1",
+      "question_text": "Is this statement true or false: 'Going to' is preferred for planned intentions.'?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "'Going to' shows prior planning and intention.",
+      "example": "I'm going to learn Spanish next year."
+    },
+    {
+      "subcategory_name": "Present Perfect Continuous",
+      "level": "B2",
+      "question_text": "You look tired. ____ you been working all night?",
+      "question_type": "multiple_choice",
+      "options": ["Do", "Are", "Have", "Did"],
+      "correct_answer": "Have",
+      "explanation": "Present Perfect Continuous questions show ongoing actions affecting the present.",
+      "example": "Have you been waiting long?"
+    },
+    {
+      "subcategory_name": "Present Perfect Continuous",
+      "level": "B2",
+      "question_text": "It ____ (rain) for three hours now.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "has been raining",
+      "explanation": "Present Perfect Continuous for actions continuing to the present.",
+      "example": "I have been living here since 2020."
+    },
+    {
+      "subcategory_name": "Past Perfect Continuous",
+      "level": "C1",
+      "question_text": "When I met him, he ____ for two hours.",
+      "question_type": "multiple_choice",
+      "options": ["was running", "had been running", "has been running", "ran"],
+      "correct_answer": "had been running",
+      "explanation": "Past Perfect Continuous for duration before a past point.",
+      "example": "They had been waiting for an hour when the bus came."
+    },
+    {
+      "subcategory_name": "Future Perfect Continuous",
+      "level": "C1",
+      "question_text": "By next month, I ____ here for two years.",
+      "question_type": "multiple_choice",
+      "options": ["will work", "will be working", "will have worked", "will have been working"],
+      "correct_answer": "will have been working",
+      "explanation": "Future Perfect Continuous for duration up to a future point.",
+      "example": "By December, we will have been studying for six months."
+    },
+    {
+      "subcategory_name": "Mixed Tenses",
+      "level": "B2",
+      "question_text": "If I ____ you, I would accept the job offer.",
+      "question_type": "multiple_choice",
+      "options": ["am", "was", "were", "will be"],
+      "correct_answer": "were",
+      "explanation": "Second conditional uses 'were' for all persons with 'if'.",
+      "example": "If I were rich, I would travel the world."
+    },
+    {
+      "subcategory_name": "Mixed Tenses",
+      "level": "B2",
+      "question_text": "She asked me what I ____ (do) the next day.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "was doing",
+      "explanation": "Reported speech: future continuous becomes past continuous.",
+      "example": "He said he was leaving tomorrow."
+    },
+    {
+      "subcategory_name": "Present Simple",
+      "level": "A1",
+      "question_text": "The sun ____ in the east.",
+      "question_type": "multiple_choice",
+      "options": ["rise", "rises", "rising", "rose"],
+      "correct_answer": "rises",
+      "explanation": "Present Simple for permanent truths and facts.",
+      "example": "Fish live in water."
+    },
+    {
+      "subcategory_name": "Present Simple",
+      "level": "A2",
+      "question_text": "How often ____ you go to the gym?",
+      "question_type": "multiple_choice",
+      "options": ["are", "do", "does", "did"],
+      "correct_answer": "do",
+      "explanation": "Use 'do' with 'you' in Present Simple frequency questions.",
+      "example": "How often do they visit their parents?"
+    },
+    {
+      "subcategory_name": "Present Continuous",
+      "level": "A2",
+      "question_text": "I can't talk now. I ____ to music.",
+      "question_type": "multiple_choice",
+      "options": ["listen", "listening", "am listening", "listened"],
+      "correct_answer": "am listening",
+      "explanation": "Present Continuous for actions happening at the moment of speaking.",
+      "example": "I'm reading a good book right now."
+    },
+    {
+      "subcategory_name": "Present Continuous",
+      "level": "B1",
+      "question_text": "Why ____ she always interrupting me?",
+      "question_type": "multiple_choice",
+      "options": ["does", "is", "do", "are"],
+      "correct_answer": "is",
+      "explanation": "Present Continuous with 'always' for annoying repeated actions.",
+      "example": "You're always complaining!"
+    },
+    {
+      "subcategory_name": "Past Simple",
+      "level": "A2",
+      "question_text": "I ____ my keys yesterday.",
+      "question_type": "multiple_choice",
+      "options": ["lose", "lost", "losed", "losing"],
+      "correct_answer": "lost",
+      "explanation": "Irregular past form of 'lose' is 'lost'.",
+      "example": "She found her wallet under the bed."
+    },
+    {
+      "subcategory_name": "Past Simple",
+      "level": "B1",
+      "question_text": "Where ____ you grow up?",
+      "question_type": "multiple_choice",
+      "options": ["do", "did", "were", "are"],
+      "correct_answer": "did",
+      "explanation": "Past Simple questions use 'did' + base form.",
+      "example": "When did you start learning English?"
+    },
+    {
+      "subcategory_name": "Past Continuous",
+      "level": "B1",
+      "question_text": "I ____ (not/pay) attention when the teacher explained.",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "wasn't paying",
+      "explanation": "Past Continuous negative: wasn't/weren't + verb-ing.",
+      "example": "They weren't listening to the instructions."
+    },
+    {
+      "subcategory_name": "Present Perfect",
+      "level": "B1",
+      "question_text": "We ____ here since 2019.",
+      "question_type": "multiple_choice",
+      "options": ["live", "lived", "have lived", "are living"],
+      "correct_answer": "have lived",
+      "explanation": "Present Perfect with 'since' for duration from a point in time.",
+      "example": "I have known her since childhood."
+    },
+    {
+      "subcategory_name": "Present Perfect",
+      "level": "B2",
+      "question_text": "Someone ____ (eat) my sandwich!",
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "has eaten",
+      "explanation": "Present Perfect for past actions with visible present results.",
+      "example": "Someone has broken the window."
+    },
+    {
+      "subcategory_name": "Past Perfect",
+      "level": "B2",
+      "question_text": "I realized I ____ met her before.",
+      "question_type": "multiple_choice",
+      "options": ["have", "had", "has", "did"],
+      "correct_answer": "had",
+      "explanation": "Past Perfect for experiences before a past realization.",
+      "example": "I had met her before."
+    }
+  ]
+]

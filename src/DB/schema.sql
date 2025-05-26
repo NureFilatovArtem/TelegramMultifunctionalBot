@@ -107,3 +107,6 @@ CREATE TABLE IF NOT EXISTS questions (
 );
 
 CREATE INDEX IF NOT EXISTS idx_questions_subcategory_level ON questions (subcategory_id, level); -- Индекс для быстрого поиска по теме и уровню
+
+ALTER TABLE questions
+    ADD CONSTRAINT unique_question_text_subcategory_level UNIQUE (question_text, subcategory_id, level);

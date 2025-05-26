@@ -1,201 +1,239 @@
-const { getCategories, getSubcategories, getQuestions, saveUserResult, getUserResults, getSubcategoryById, saveGeneratedQuestions } = require('../../../src/DB/db'); // Added saveGeneratedQuestions
-const { generateQuestionsGemini } = require('./gemini.service');
+// src/features/english-test/english-test.service.js
+const { getCategories, getSubcategories, saveUserResult, getSubcategoryByName } = require('../../DB/db'); // Убедись, что db.js в src/DB
+// Убраны getQuestions, getSubcategoryById, saveGeneratedQuestions, так как мы их больше не используем напрямую для вопросов
+// const { generateQuestionsGemini } = require('./gemini.service'); // Отключено, если не используется
+const fs = require('fs');
+const path = require('path');
+
+const MY_QUESTIONS_PATH = path.join(__dirname, '../../../my_questions.json');
+let localQuestionsCache = null;
+
+function loadLocalQuestions() {
+    if (localQuestionsCache !== null) { return localQuestionsCache; }
+    try {
+        if (fs.existsSync(MY_QUESTIONS_PATH)) {
+            const jsonData = fs.readFileSync(MY_QUESTIONS_PATH, 'utf-8');
+            localQuestionsCache = JSON.parse(jsonData);
+            if (!Array.isArray(localQuestionsCache)) {
+                console.error("[Service ERROR] Parsed data from my_questions.json is NOT an array. Setting cache to empty array.");
+                localQuestionsCache = [];
+            }
+            console.log(`[Service LOG] Loaded ${localQuestionsCache.length} questions from my_questions.json`);
+            return localQuestionsCache;
+        } else {
+            console.warn(`[Service WARN] my_questions.json not found at ${MY_QUESTIONS_PATH}`);
+            localQuestionsCache = []; return [];
+        }
+    } catch (error) {
+        console.error(`[Service ERROR] Failed to load or parse my_questions.json: ${error.message}`);
+        localQuestionsCache = []; return [];
+    }
+}
+
+function getGeneralCategoryForSubcategory(subcategoryName) {
+    const subNameLower = subcategoryName.toLowerCase();
+    const grammarSubcategories = ["present simple", "past simple", "present continuous", "past continuous", "present perfect", "future simple", "conditionals", "reported speech", "passive voice", "modal verbs"];
+    const vocabularySubcategories = ["articles", "idioms", "phrasal verbs", "prepositions", "adjectives and adverbs", "collocations", "synonyms"];
+    if (grammarSubcategories.includes(subNameLower)) return "Grammar";
+    if (vocabularySubcategories.includes(subNameLower)) return "Vocabulary";
+    return "Other";
+}
 
 class EnglishTestService {
     constructor() {
-        this.userStates = new Map(); // userId -> { state, focus, level, subcategoryId, currentQuestion, questions, answers }
+        this.userStates = new Map();
+        loadLocalQuestions();
     }
 
-    // ... (generateQuestions, getCategoriesMenu, getSubcategoriesMenu are fine) ...
-    async generateQuestions(category, subcategory, level = 'B1', count = 5, questionType = 'multiple_choice') {
-        console.log(`[Service] Generating questions for: Cat=${category}, Subcat=${subcategory}, Lvl=${level}, Count=${count}, Type=${questionType}`);
-        return await generateQuestionsGemini(category, subcategory, level, count, questionType);
-    }
+    getQuestionsFromJsonOnly(subcategoryName, requestedCount, userFocus = null) {
+        const allLocalQuestions = loadLocalQuestions();
+        if (!allLocalQuestions || allLocalQuestions.length === 0) { console.log(`[getQuestionsFromJsonOnly LOG] No local questions in cache.`); return [];}
 
+        const targetSubcategoryName = subcategoryName.trim().toLowerCase();
+        console.log(`[getQuestionsFromJsonOnly LOG] Filtering JSON for subcategory: "${targetSubcategoryName}", requested: ${requestedCount}`);
+
+        let primaryFilteredQuestions = allLocalQuestions.filter(q => {
+            if (!q || typeof q.subcategory_name !== 'string' || q.question_type === 'fill_in_blank') return false; // Исключаем fill_in_blank
+            return q.subcategory_name.trim().toLowerCase() === targetSubcategoryName;
+        });
+        
+        console.log(`[getQuestionsFromJsonOnly LOG] Found ${primaryFilteredQuestions.length} primary questions for "${targetSubcategoryName}".`);
+
+        if (primaryFilteredQuestions.length < requestedCount && userFocus) {
+            const neededMore = requestedCount - primaryFilteredQuestions.length;
+            console.log(`[getQuestionsFromJsonOnly LOG] Not enough primary. Need ${neededMore} more. User focus: ${userFocus}`);
+            const generalCategoryTarget = userFocus.toLowerCase();
+            const supplementaryQuestions = allLocalQuestions.filter(q => {
+                if (!q || typeof q.subcategory_name !== 'string' || q.question_type === 'fill_in_blank') return false;
+                if (q.subcategory_name.trim().toLowerCase() === targetSubcategoryName) return false; 
+                return getGeneralCategoryForSubcategory(q.subcategory_name).toLowerCase() === generalCategoryTarget;
+            });
+            console.log(`[getQuestionsFromJsonOnly LOG] Found ${supplementaryQuestions.length} supplementary questions from general category "${userFocus}".`);
+            if (supplementaryQuestions.length > 0) {
+                supplementaryQuestions.sort(() => Math.random() - 0.5);
+                primaryFilteredQuestions = primaryFilteredQuestions.concat(supplementaryQuestions.slice(0, neededMore));
+            }
+        }
+
+        if (primaryFilteredQuestions.length > 0) {
+            primaryFilteredQuestions.sort(() => Math.random() - 0.5);
+            return primaryFilteredQuestions.slice(0, requestedCount);
+        }
+        return [];
+    }
+    
     async getSubcategoriesMenu(categoryId) {
-        const subcategories = await getSubcategories(categoryId);
-        if (!subcategories) return []; // Handle null/undefined case
-        return subcategories.map(sub => ({
-            text: sub.name,
-            callback_data: `english_subcategory_${sub.id}`
-        }));
+        // Используем БД только для существующих там подкатегорий, остальное - из JSON
+        let dbSubcategories = [];
+        try {
+            dbSubcategories = await getSubcategories(categoryId);
+        } catch (dbError) {
+            console.warn(`[getSubcategoriesMenu] Could not fetch subcategories from DB for categoryId ${categoryId}: ${dbError.message}. Relying on JSON.`);
+        }
+
+        let subcategoryButtons = [];
+        if (dbSubcategories && Array.isArray(dbSubcategories)) {
+             subcategoryButtons = dbSubcategories.map(sub => ({ text: sub.name, callback_data: `eng_subcat_${sub.name.replace(/\s+/g, '_')}`}));
+        }
+        
+        const allJsonQuestions = loadLocalQuestions();
+        const jsonSubcategories = new Set();
+        if(allJsonQuestions && Array.isArray(allJsonQuestions)){
+            allJsonQuestions.forEach(q => {
+                if(!q || !q.subcategory_name || q.question_type === 'fill_in_blank') return; // Не добавляем fill_in_blank в меню
+                const generalCat = getGeneralCategoryForSubcategory(q.subcategory_name);
+                if ((categoryId === 1 && generalCat === "Grammar") || (categoryId === 2 && generalCat === "Vocabulary")) {
+                    jsonSubcategories.add(q.subcategory_name.trim());
+                }
+            });
+        }
+        jsonSubcategories.forEach(jsonSubName => { if (!subcategoryButtons.some(btn => btn.text.toLowerCase() === jsonSubName.toLowerCase())) { subcategoryButtons.push({ text: jsonSubName, callback_data: `eng_subcat_${jsonSubName.replace(/\s+/g, '_')}`});}});
+        const uniqueSubcategoryButtons = []; const seenTexts = new Set();
+        for (const btn of subcategoryButtons) { if (!seenTexts.has(btn.text)) { uniqueSubcategoryButtons.push(btn); seenTexts.add(btn.text);}}
+        console.log(`[getSubcategoriesMenu] Formed ${uniqueSubcategoryButtons.length} unique subcategory buttons for categoryId ${categoryId}.`);
+        return uniqueSubcategoryButtons.sort((a,b) => a.text.localeCompare(b.text));
     }
 
-
-    async startTest(userId, subcategoryId, level = 'B1') {
+    async startTest(userId, subcategoryName, levelInput, questionCount = 5) {
         try {
-            let questions = await getQuestions(subcategoryId, level); // Fetch by subcategory AND level
+            const userState = this.userStates.get(userId) || {};
+            const userFocus = userState.focus; 
+
+            console.log(`[startTest LOG] User ${userId}, Subcat: "${subcategoryName}", Level IN: ${levelInput} (ignored for JSON), QCount: ${questionCount}, UserFocus: ${userFocus}`);
             
-            if (!questions || questions.length === 0) {
-                console.log(`[startTest] No questions in DB for subcategory ${subcategoryId}, level ${level}. Generating...`);
-                const subcategory = await getSubcategoryById(subcategoryId);
-                if (!subcategory) {
-                    console.error(`[startTest] No subcategory found for id=${subcategoryId}`);
-                    return null;
-                }
-                // Assuming category_id in subcategory table refers to id in categories table
-                const categories = await getCategories(); // Fetch all categories
-                const category = categories.find(cat => cat.id === subcategory.category_id);
-                if (!category) {
-                    console.error(`[startTest] No category found for category_id=${subcategory.category_id} (from subcategory ${subcategory.name})`);
-                    return null;
-                }
+            let questions = this.getQuestionsFromJsonOnly(subcategoryName, questionCount, userFocus);
+            console.log(`[startTest LOG] From JSON (level ignored, with possible category supplement): ${questions.length} questions for "${subcategoryName}".`);
 
-                // Determine question type based on category (example)
-                let qType = 'multiple_choice';
-                if (category.name.toLowerCase().includes('vocabulary')) {
-                    // qType = 'fill_in_blank'; // Or mix them
-                }
-                
-                let newQuestions;
-                try {
-                    newQuestions = await this.generateQuestions(category.name, subcategory.name, level, 5, qType); // Generate 5 questions
-                } catch (genError) {
-                    console.error(`[startTest] Gemini generation failed for ${category.name} - ${subcategory.name}: ${genError.message}`);
-                    return null; // Critical failure, can't proceed
-                }
-
-                if (newQuestions && newQuestions.length > 0) {
-                    console.log(`[startTest] Generated ${newQuestions.length} new questions from Gemini.`);
-                    // TODO: Implement saveGeneratedQuestions in db.js
-                    // This function should insert questions into your DB table, linking them to subcategoryId and level.
-                    try {
-                       await saveGeneratedQuestions(subcategoryId, level, newQuestions); // Pass level
-                       console.log(`[startTest] Saved ${newQuestions.length} questions to DB for subcategory ${subcategoryId}, level ${level}.`);
-                    } catch (dbSaveError) {
-                       console.error(`[startTest] Failed to save generated questions to DB: ${dbSaveError.message}. Using them for this session only.`);
-                    }
-                    questions = newQuestions;
-                } else {
-                    console.log(`[startTest] Gemini returned no questions for ${category.name} - ${subcategory.name}.`);
-                    return null; // No questions available
-                }
+            if (questions.length === 0) {
+                console.log(`[startTest WARN] No questions available in my_questions.json for "${subcategoryName}".`);
+                return null; 
             }
-
-            if (!questions || questions.length === 0) {
-                console.log(`[startTest] Still no questions after attempting generation for subcategory ${subcategoryId}, level ${level}.`);
-                return null;
+            
+            if (questions.length < questionCount && questions.length > 0) {
+                console.warn(`[startTest WARN] Only ${questions.length} questions available from JSON for "${subcategoryName}", though ${questionCount} were requested.`);
             }
-
-            // Shuffle questions for variety if desired:
-            // questions.sort(() => Math.random() - 0.5);
-
 
             this.userStates.set(userId, {
-                ...this.userStates.get(userId), // Preserve focus, level, subcategoryId
+                ...userState, 
+                subcategoryName: subcategoryName,
+                questionCount: questions.length, 
                 state: 'taking_test',
                 currentQuestion: 0,
-                questions: questions, // These are full question objects from DB or Gemini
+                questions: questions,
                 answers: [],
             });
             
-            return this.getCurrentQuestionData(userId);
+            return this.getCurrentQuestionData(userId); // <--- ВЫЗОВ ВОССТАНОВЛЕННОГО МЕТОДА
+
         } catch (error) {
-            console.error(`[startTest] General error: ${error.message}`, error.stack);
+            console.error(`[startTest ERROR] General error in startTest: ${error.message}`, error.stack);
             return null;
         }
     }
 
-    // Renamed from getCurrentQuestion to avoid confusion, and to ensure it returns full data
+    // <<<<< НАЧАЛО ВОССТАНОВЛЕННЫХ МЕТОДОВ >>>>>
     getCurrentQuestionData(userId) {
         const state = this.userStates.get(userId);
-        if (!state || state.currentQuestion >= state.questions.length) {
-            return null;
-        }
-
+        if (!state || !state.questions || state.currentQuestion >= state.questions.length) { return null; }
         const question = state.questions[state.currentQuestion];
-        return {
-            text: question.question_text,
-            type: question.question_type, // e.g., 'multiple_choice', 'fill_in_blank', 'true_false'
-            options: question.options, // Array of strings for multiple_choice
-            questionNumber: state.currentQuestion + 1,
-            totalQuestions: state.questions.length
-            // No need to return correct_answer to client here
-        };
+         // Убедимся, что options - это массив, если его нет или он null из JSON
+        const options = (Array.isArray(question.options) && question.options.length > 0) ? question.options : [];
+        if (question.question_type === 'multiple_choice' && options.length === 0) { // Изменено с question.type на question.question_type
+            console.warn(`[getCurrentQuestionData WARN] Multiple choice question has no options: ${question.question_text}`);
+        }
+        return { text: question.question_text, type: question.question_type, options: options, questionNumber: state.currentQuestion + 1, totalQuestions: state.questionCount };
     }
 
     checkAnswer(userId, userAnswer) {
         const state = this.userStates.get(userId);
-        if (!state || state.state !== 'taking_test' || state.currentQuestion >= state.questions.length) {
-            console.error(`[checkAnswer] Invalid state for user ${userId} or question index out of bounds.`);
-            return null;
-        }
-
+        if (!state || state.state !== 'taking_test' || !state.questions || state.currentQuestion >= state.questions.length) { console.error(`[checkAnswer] Invalid state for user ${userId}.`); return null; }
         const currentQuestionObject = state.questions[state.currentQuestion];
-        let isCorrect;
-
-        // Normalize answers for comparison
-        const normalizedUserAnswer = userAnswer.trim().toLowerCase();
-        const normalizedCorrectAnswer = String(currentQuestionObject.correct_answer).trim().toLowerCase(); // Ensure it's a string
-
-        if (Array.isArray(currentQuestionObject.correct_answer)) { // If Gemini returns an array of correct answers
-            isCorrect = currentQuestionObject.correct_answer.some(ans => String(ans).trim().toLowerCase() === normalizedUserAnswer);
-        } else {
-            isCorrect = normalizedUserAnswer === normalizedCorrectAnswer;
-        }
+        if (!currentQuestionObject) { console.error(`[checkAnswer] currentQuestionObject is undefined for user ${userId}, qIndex ${state.currentQuestion}`); return null; }
         
-        state.answers.push({
-            question: currentQuestionObject.question_text, // For results display
-            userAnswer: userAnswer,
-            isCorrect: isCorrect,
-            correctAnswer: currentQuestionObject.correct_answer, // For results display
-            explanation: currentQuestionObject.explanation, // For results display
-            example: currentQuestionObject.example // For results display
+        let isCorrect;
+        const normalizedUserAnswer = userAnswer.trim().toLowerCase();
+        const normalizedCorrectAnswer = String(currentQuestionObject.correct_answer).trim().toLowerCase();
+        
+        if (Array.isArray(currentQuestionObject.correct_answer)) { isCorrect = currentQuestionObject.correct_answer.some(ans => String(ans).trim().toLowerCase() === normalizedUserAnswer);
+        } else { isCorrect = normalizedUserAnswer === normalizedCorrectAnswer; }
+        
+        state.answers.push({ 
+            question: currentQuestionObject.question_text, 
+            userAnswer: userAnswer, 
+            isCorrect: isCorrect, 
+            correctAnswer: currentQuestionObject.correct_answer, 
+            explanation: currentQuestionObject.explanation, 
+            example: currentQuestionObject.example 
         });
-
-        state.currentQuestion++; // Advance to the next question index
-
+        state.currentQuestion++;
         const explanationOrCorrect = currentQuestionObject.explanation || currentQuestionObject.correct_answer;
-
-        return {
-            isCorrect,
-            explanation_or_correct_answer: isCorrect ? "Correct!" : explanationOrCorrect,
-            example: currentQuestionObject.example, // Send example even if correct, or only if incorrect
-            nextQuestion: (state.currentQuestion < state.questions.length) ? this.getCurrentQuestionData(userId) : null
+        return { 
+            isCorrect, 
+            explanation_or_correct_answer: isCorrect ? "Correct!" : explanationOrCorrect, 
+            example: currentQuestionObject.example, 
+            nextQuestion: (state.currentQuestion < state.questions.length) ? this.getCurrentQuestionData(userId) : null 
         };
     }
 
     async finishTest(userId) {
         const state = this.userStates.get(userId);
-        if (!state) return null;
-
-        const correctAnswersCount = state.answers.filter(a => a.isCorrect).length;
-        const totalQuestions = state.questions.length;
+        if (!state || !state.questions) { console.warn(`[finishTest] No valid state/questions for user ${userId}.`); return null; }
         
+        const correctAnswersCount = state.answers.filter(a => a.isCorrect).length;
+        const totalQuestionsInTest = state.questionCount;
         const wrongAnswersDetailed = state.answers
             .filter(a => !a.isCorrect)
-            .map(a => ({ // Already have this structure from checkAnswer storage
-                question: a.question,
-                userAnswer: a.userAnswer,
-                correctAnswer: a.correctAnswer,
-                explanation: a.explanation,
-                example: a.example
+            .map(a => ({ 
+                question: a.question, 
+                userAnswer: a.userAnswer, 
+                correctAnswer: a.correctAnswer, 
+                explanation: a.explanation, 
+                example: a.example 
             }));
-
+        
         try {
-            // Ensure subcategoryId is available in state
-            if (state.subcategoryId) {
-                 await saveUserResult(userId, state.subcategoryId, correctAnswersCount, totalQuestions, JSON.stringify(wrongAnswersDetailed)); // Store wrong answers as JSON string
-            } else {
-                console.warn(`[finishTest] subcategoryId missing for user ${userId}, results not saved to DB history.`);
+            let subcategoryDB = await getSubcategoryByName(state.subcategoryName).catch(err => { 
+                console.warn(`[finishTest WARN] Error fetching subcat by name for saving results: ${err.message}`); 
+                return null;
+            });
+            if (subcategoryDB && subcategoryDB.id) {
+                 await saveUserResult(userId, subcategoryDB.id, correctAnswersCount, totalQuestionsInTest, JSON.stringify(wrongAnswersDetailed));
+                 console.log(`[finishTest LOG] Saved results for user ${userId}, subcategory "${state.subcategoryName}" (ID: ${subcategoryDB.id})`);
+            } else { 
+                console.warn(`[finishTest WARN] subcategory ID for '${state.subcategoryName}' not found in DB, results not saved to DB history.`); 
             }
-        } catch (dbError) {
-            console.error(`[finishTest] Error saving user result to DB: ${dbError.message}`);
+        } catch (dbError) { 
+            console.error(`[finishTest ERROR] Error saving user result: ${dbError.message}`); 
         }
         
-        const finalResults = {
-            score: correctAnswersCount,
-            totalQuestions,
-            wrongAnswers: wrongAnswersDetailed
+        const finalResults = { 
+            score: correctAnswersCount, 
+            totalQuestions: totalQuestionsInTest, 
+            wrongAnswers: wrongAnswersDetailed 
         };
-
-        // Clean up state for this test
-        this.userStates.delete(userId); // Or update state to 'finished_test' if you want to keep results temporarily
-
+        this.userStates.delete(userId);
         return finalResults;
     }
-
-    // ... (getUserTestHistory is fine)
+    // <<<<< КОНЕЦ ВОССТАНОВЛЕННЫХ МЕТОДОВ >>>>>
 }
-
 module.exports = new EnglishTestService();
